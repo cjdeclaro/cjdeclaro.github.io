@@ -26,24 +26,97 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-	<script>
-		$(function () {
-			$("#headerpart").load("topnav.html");
-		});
-	</script>
-
-	<script>
-		$(function () {
-			$("#footerpart").load("footer.html");
-		});
-	</script>
-
 </head>
 
 
 <body class="page-template-page">
 
-	<div id="headerpart"></div>
+	<header id="site-header" class="fixed-header">
+
+		<div class="header-main">
+			<div class="container">
+
+				<div class="header-inner clearfix">
+
+					<div class="medium-header-container">
+
+						<!-- Site logo -->
+						<a href="index.html" id="site-logo"></a>
+
+						<!-- Mobile burger icon -->
+						<div id="mobile-nav-button" class="hidden-desk hidden-tab">
+							<div id="mobile-nav-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- header nav menu -->
+					<nav id="header-nav">
+
+						<ul id="nav-ul" class="menu font-montserrat-reg clearfix">
+
+							<li class="menu-item">
+								<a href="index.html">Home<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							</li>
+
+							<li class="menu-item menu-item-has-children">
+								<a>About<span class="sub-drop-icon fa fa-angle-down"></span></a>
+								<ul class="sub-menu sub-menu-first">
+									<li><a href="about.html">Me</a></li>
+									<li><a href="about-site.html">the Site</a></li>
+								</ul>
+							</li>
+
+							<li class="menu-item menu-item-has-children">
+								<a>Portfolio<span class="sub-drop-icon fa fa-angle-down"></span></a>
+								<ul class="sub-menu sub-menu-first">
+									<li><a href="portfolio.html">Projects</a></li>
+									<li><a href="portfolio-awards.html">Awards</a></li>
+									<li class="menu-item menu-item-has-children">
+										<a>Social<span class="sub-drop-icon sub-second-drop fa fa-angle-down"></span></a>
+										<ul class="sub-menu sub-second-tier">
+											<li><a href="instagram.html">Instagram</a></li>
+											<li><a href="https://facebook.com/christopherjay.declaro" target="_blank">Facebook</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu-item menu-item-has-children">
+								<a>Services<span class="sub-drop-icon fa fa-angle-down"></span></a>
+								<ul class="sub-menu sub-menu-first">
+									<li><a href="services-skills.html">Skills</a></li>
+									<li><a href="services-offers.html">Offers</a></li>
+								</ul>
+							</li>
+
+							<li class="menu-item menu-item-has-children">
+								<a>Blog<span class="sub-drop-icon fa fa-angle-down"></span></a>
+								<ul class="sub-menu sub-menu-first">
+									<li><a href="blog-popular.html">Popular</a></li>
+									<li><a href="blog.html">Latest Blogs</a></li>
+								</ul>
+							</li>
+
+							<li class="menu-item">
+								<a href="contact.html">Contact<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							</li>
+
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+		</div>
+
+	</header>
 
 	<div id="main-content">
 
@@ -185,7 +258,34 @@
 		</section>
 
 	</div>
-	<div id="footerpart"></div>
+	<footer>
+		<div id="footer-main">
+			<div class="container">
+				<div id="footer-inner" class="clearfix">
+
+					<!-- footer social icons -->
+					<ul id="footer-social">
+						<li><a href="https://facebook.com/christopherjay.declaro" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/cjdeclaro" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com/cjdeclaro" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+
+					<!-- footer right section -->
+					<div id="footer-right">
+
+						<!-- copyright text -->
+						<p id="footer-copyright" class="font-montserrat-reg">Copyright &copy; 2018 . cjdeclaro.com</p>
+
+						<!-- scroll to top -->
+						<div id="scroll-top">
+							<span class="fa fa-angle-up"></span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
