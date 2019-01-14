@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- page title -->
+<title>CJ | Blog</title>
+	
+<link rel="icon" href="assets/img/cj logo.png">
+
+<!-- theme css --> 
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!-- carousel css -->
+<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body class="page-template-blog">
+
+<?php include 'topnav.php'?>
+
+<div id="main-content">
+	
+	<!-- blog list section -->
+	<section class="blog-list-section">
+		<div class="container">
+		
+			<div class="section-inner no-border">
+		
+				<div class="row">
+				
+					<!-- blog list -->
+					<div class="col-xlarge-8 col-medium-8">
+						
+						<ul class="row blog-list">
+							
+							<!-- blog post example -->
+							<li class="col-xlarge-12">
+								<div class="blog-item">
+									<a href="blog-single.php">
+										<img src="assets/img/post_placeholder_6.jpg" alt="test" class="image">
+									</a>
+									<h3 class="font-montserrat-reg"><a href="blog-single.php">Computer Generated Graphics</a></h3>
+									<div class="page-content">
+										<p>Computer Generated Graphics and Imaging is now the mainstream of designs. With these new platforms, doors of unprecedented innovations open.<br>Computer Generated Graphics are used in popular medias. Things that may seem impossible to create or things that takes a lot of skill to be […] </p>
+									</div>								
+									<a href="blog-single.php" class="secondary-button font-montserrat-reg hov-bk">Read More</a>	
+								</div>
+							</li>
+							
+							<!-- blog post example -->
+							<li class="col-xlarge-12">
+								<div class="blog-item">
+									<a href="blog-single.php">
+										<img src="assets/img/post_placeholder_7.jpg" alt="test" class="image">
+									</a>
+									<h3 class="font-montserrat-reg"><a href="blog-single.php">Client branding project</a></h3>
+									<div class="page-content">
+										<p>Softwares and Designs can get easily accustomed to, but branding is a whole new idea. This project came because of a call from […]</p>
+									</div>								
+									<a href="blog-single.php" class="secondary-button font-montserrat-reg hov-bk">Read More</a>	
+								</div>
+							</li>
+							
+							<!-- blog post example -->
+							<li class="col-xlarge-12">
+								<div class="blog-item">
+									<a href="blog-single.php">
+										<img src="assets/img/post_placeholder_5.jpg" alt="test" class="image">
+									</a>
+									<h3 class="font-montserrat-reg"><a href="blog-single.php">Caligraphy</a></h3>
+									<div class="page-content">
+										<p>To build this site, I found myself needing for additional pictures. This is where my Photography and Calligraphy skills came in to […]</p>
+									</div>								
+									<a href="blog-single.php" class="secondary-button font-montserrat-reg hov-bk">Read More</a>	
+								</div>
+							</li>
+							
+						</ul>
+						
+						<!-- post navigation -->
+						<section class="post-navigation">
+							<div id="post-nav-main" class="clearfix">
+								<!--a href="" id="post-nav-prev" class="post-nav-item">
+									<p class="font-montserrat-reg"><i class="fa fa-long-arrow-left"></i>Newer Posts</p>
+								</a-->
+								<a id="post-nav-next" class="post-nav-item">
+									<p class="font-montserrat-reg">Older Posts<i class="fa fa-long-arrow-right"></i></p>
+								</a>
+							</div>
+						</section>
+						
+					</div>
+					
+					<!-- right sidebar -->
+					<div class="col-xlarge-4 col-medium-4 post-sidebar right-sidebar">
+						
+						<!-- about widget -->
+						<div class="sidebar-widget widget_intent_about_widget">
+							<h3 class="font-montserrat-reg">About Me</h3>		
+							<div class="page-content">
+								<p>Hi! I'm Christopher Jay De Claro. A Freelance Software Developer, UI/UX Designer, and Web Developer. I am a Bachelor of Science in Information Technology. I look forward on working with you!  </p>
+							</div><br>
+							<a href="about-me.php" class="secondary-button font-montserrat-reg hov-bk">More</a>
+							<ul class="about-widget-social">
+								<li><a href="https://facebook.com/christopherjay.declaro" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/cjdeclaro"" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://instagram.com/cjdeclaro" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+						
+						<!-- latest posts widget -->
+						<div class="sidebar-widget widget_intent_latest_posts_widget">
+							<h3 class="font-montserrat-reg">Latest Blog</h3>		
+								
+							<ul class="recent_posts_list">
+							
+								<!-- post example -->
+								<li>
+									<a href="blog-single.php">
+										<div class="row">
+											<div class="col-xlarge-5 col-medium-4 col-small-5">
+												<img src="assets/img/post_placeholder_6.jpg" alt="test" class="image">
+											</div>
+											<div class="col-xlarge-7 col-medium-8 col-small-7 intent_latest_post_col_right">
+												<h4 class="font-montserrat-reg">Computer Generated Graphic</h4>
+												<p class="font-opensans-reg">27th January 2018</p>
+											</div>
+										</div>
+									</a>
+								</li>
+
+								<!-- post example -->
+								<li>
+									<a href="blog-single.php">
+										<div class="row">
+											<div class="col-xlarge-5 col-medium-4 col-small-5">
+												<img src="assets/img/post_placeholder_7.jpg" alt="test" class="image">
+											</div>
+											<div class="col-xlarge-7 col-medium-8 col-small-7 intent_latest_post_col_right">
+												<h4 class="font-montserrat-reg">Client branding project</h4>
+												<p class="font-opensans-reg">13th September 2017</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								
+								<!-- post example -->
+								<li>
+									<a href="blog-single.php">
+										<div class="row">
+											<div class="col-xlarge-5 col-medium-4 col-small-5">
+												<img src="assets/img/post_placeholder_5.jpg" alt="test" class="image">
+											</div>
+											<div class="col-xlarge-7 col-medium-8 col-small-7 intent_latest_post_col_right">
+												<h4 class="font-montserrat-reg">Calligraphy</h4>
+												<p class="font-opensans-reg">25th August 2017</p>
+											</div>
+										</div>
+									</a>
+								</li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<?php include 'footer.php'?>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

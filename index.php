@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- page title -->
+<title>CJ | Home</title>
+	
+<link rel="icon" href="assets/img/cj logo.png">
+
+<!-- theme css --> 
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!-- carousel css -->
+<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body class="page-template-home">
+
+<?php include 'topnav.php'?>
+
+<div id="main-content">
+
+	<!-- featured section - slideshow -->
+	<section class="featured-section featured-narrow">
+		<div id="featured-slideshow-outer" class="carousel-outer">
+			
+			<!-- previous slide button -->
+			<span class="slideshow-btn previous-slide-btn fa fa-angle-left"></span>
+			
+			<!-- featured slideshow -->
+			<div id="featured-slideshow" class="carousel" data-autoplay="" data-autoplay-speed="" data-animation-in="fadeIn" data-animation-out="fadeOut">
+			
+				<!-- slide example - left aligned -->
+				<div class="featured-slide" style="background-image:url('assets/img/featured_placeholder_1.jpg');">
+					<div class="container">
+						<div class="featured-slide-content featured-left">
+							<h2 class="font-montserrat-reg">Hi! I'm Christopher Jay<br>De Claro</h2>
+							<p>A Software Developer, UI/UX Designer, and Web Developer.<br><br>I look forward on working with you! </p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- slide example -right aligned -->
+				<div class="featured-slide" style="background-image:url('assets/img/featured.jpg');">
+					<div class="container">
+						<div class="featured-slide-content featured-right">
+							<h2 class="font-montserrat-reg">Portfolio</h2>
+							<p>Here lies the works I laid as a foundation to a wonderful future ahead of us.<br>I'd love to share it with you!</p>
+							<a href="portfolio.php" class="primary-button font-montserrat-reg hov-bk">View Portfolio</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- slide example - center aligned -->
+				<div class="featured-slide" style="background-image:url('assets/img/featured_placeholder_3.jpg');">
+					<div class="container">
+						<div class="featured-slide-content featured-left">
+							<h2 class="font-montserrat-reg">Services</h2>
+							<p>Let me show you what I can do.<br>Let's work together!</p>
+							<a href="services-offers.php" class="primary-button font-montserrat-reg hov-bk">View Services</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- next slide button -->
+			<span class="slideshow-btn next-slide-btn fa fa-angle-right"></span>
+			
+		</div>
+	</section>
+
+	
+	<!-- portfolio section -->
+	<section class="portfolio-section">
+		<div class="container">
+		
+			<div class="section-inner no-border">
+			
+				<!-- portfolio item list -->
+				<ul id="portfolio-items" class="row clearfix" data-layout-style="grid">
+			
+					<!-- portfolio item example -->
+					<li class="col-xlarge-4 col-medium-4 print-design">
+						<a href="portfolio-latest.php"  class="portfolio-item">
+							<img src="assets/img/portfolio_placeholder_1.jpg" class="image" alt="" />
+							<!-- portfolio item hover -->
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<h3 class="font-montserrat-reg">The Paper Zebra</h3>
+									<p class="font-opensans-reg">Paper Art Design Concept</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<!-- portfolio item example -->
+					<li class="col-xlarge-4 col-medium-4 design print-design">
+						<a href="portfolio-latest.php" class="portfolio-item">
+							<img src="assets/img/portfolio_placeholder_8.jpg" class="image" alt="" />
+							<!-- portfolio item hover -->
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<h3 class="font-montserrat-reg">Invest on your Forte, Dump the rest</h3>
+									<p class="font-opensans-reg">Article</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<!-- portfolio item example -->
+					<li class="col-xlarge-4 col-medium-4 design">
+						<a href="portfolio-latest.php" class="portfolio-item">
+							<img src="assets/img/portfolio_placeholder_10.jpg" class="image" alt="" />
+							<!-- portfolio item hover -->
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<h3 class="font-montserrat-reg">Thank you!</h3>
+									<p class="font-opensans-reg">Calligraphy</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="portfolio.php" class="secondary-button font-montserrat-reg hov-bk">View More</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- service section -->
+	<section class="block-section">
+		<div class="container">
+		
+			<div class="section-inner">
+		
+				<!-- service item list -->
+				<ul class="row block-list-1">
+				
+					<!-- service block item example -->
+					<li class="col-xlarge-6 col-medium-6">
+						<div class="block-item">
+							<div class="row">
+								<div class="col-xlarge-3">
+									<div class="block-item-icon">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xlarge-9">
+									<h3 class="font-montserrat-reg">UI/UX Design</h3>
+									<p>An excellent software deserves an outstanding user interface. UI design is a crucial factor in showcasing powerful products. A beautiful UI will ensure a great User Experience.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<!-- service block item example -->
+					<li class="col-xlarge-6 col-medium-6">
+						<div class="block-item">
+							<div class="row">
+								<div class="col-xlarge-3">
+									<div class="block-item-icon">
+										<i class="fa fa-code" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xlarge-9">
+									<h3 class="font-montserrat-reg">Web Development</h3>
+									<p>The world is changing, Technology is everywhere. With a website, a business will bloom to a bigger audience globally. A website will surely reach to every corner of the globe. You deserve one!</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a href="services-skills.php" class="secondary-button font-montserrat-reg hov-bk">View More</a>
+			</div>
+		</div>
+	</section>
+</div>
+
+<?php include 'footer.php'?>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery.sharrre.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/isotope/isotope.js"></script>
+<script type="text/javascript" src="assets/js/lib/isotope/packery.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

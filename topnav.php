@@ -1,0 +1,87 @@
+<!-- header -->
+<header id="site-header" class="fixed-header">
+	
+	<div class="header-main">
+		<div class="container">
+
+			<div class="header-inner clearfix">
+		
+				<div class="medium-header-container">
+				
+					<!-- Site logo -->
+					<a href="index.php" id="site-logo"></a>
+					
+					<!-- Mobile burger icon -->
+					<div id="mobile-nav-button" class="hidden-desk hidden-tab">
+						<div id="mobile-nav-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- header nav menu -->
+				<nav id="header-nav">
+				
+					<ul id="nav-ul" class="menu font-montserrat-reg clearfix">
+					
+						<li class="menu-item">
+							<a href="index.php">Home<span class="sub-drop-icon fa fa-angle-down"></span></a>
+						</li>
+						
+						<li class="menu-item menu-item-has-children">
+							<a>About<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							<ul class="sub-menu sub-menu-first">
+								<li><a href="about.php">Me</a></li>
+								<li><a href="about-site.php">the Site</a></li>
+							</ul>
+						</li>
+						
+						<li class="menu-item menu-item-has-children">
+							<a>Portfolio<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							<ul class="sub-menu sub-menu-first">
+								<li><a href="portfolio.php">Projects</a></li>
+								<li><a href="portfolio-awards.php">Awards</a></li>
+								<li class="menu-item menu-item-has-children">
+									<a>Social<span class="sub-drop-icon sub-second-drop fa fa-angle-down"></span></a>
+									<ul class="sub-menu sub-second-tier">
+										<li><a href="instagram.php">Instagram</a></li>
+										<li><a href="https://facebook.com/christopherjay.declaro" target="_blank">Facebook</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						
+						<li class="menu-item menu-item-has-children">
+							<a>Services<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							<ul class="sub-menu sub-menu-first">
+								<li><a href="services-skills.php">Skills</a></li>
+								<li><a href="services-offers.php">Offers</a></li>
+							</ul>
+						</li>
+						
+						<li class="menu-item menu-item-has-children">
+							<a>Blog<span class="sub-drop-icon fa fa-angle-down"></span></a>
+							<ul class="sub-menu sub-menu-first">
+								<li><a href="blog-popular.php">Popular</a></li>
+								<li><a href="blog.php">Latest Blogs</a></li>
+							</ul>
+						</li>
+						
+						<li class="menu-item">
+							<a href="contact.php">Contact<span class="sub-drop-icon fa fa-angle-down"></span></a>
+						</li>
+						
+					</ul>
+				
+				</nav>
+				
+			</div>
+			
+		</div>
+	</div>
+
+</header>

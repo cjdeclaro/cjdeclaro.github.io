@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- page title -->
+<title>CJ | Contact</title>
+	
+<link rel="icon" href="assets/img/cj logo.png">
+
+<!-- theme css --> 
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="page-template-contact">
+
+<?php include 'topnav.php'?>
+
+<div id="main-content">
+	
+	<!-- contact block section -->
+	<section class="block-section">
+		<div class="container">
+		
+			<div class="section-inner no-border">
+		
+				<!-- contact block item list -->
+				<ul class="row">
+				
+					<!-- contact block item example -->
+					<li class="col-xlarge-4 col-medium-4">
+						<div class="block-item">
+							<div class="row">
+								<div class="col-xlarge-4 col-large-12">
+									<div class="block-item-icon">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xlarge-8 col-large-12">
+									<h3 class="font-montserrat-reg">Our Location</h3>
+									<p>Tumaway, Talisay, Batangas</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<!-- contact block item example -->
+					<li class="col-xlarge-4 col-medium-4">
+						<div class="block-item">
+							<div class="row">
+								<div class="col-xlarge-4 col-large-12">
+									<div class="block-item-icon">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xlarge-8 col-large-12">
+									<h3 class="font-montserrat-reg">Email Us</h3>
+									<a href="mailto:cjdeclaro16@gmail.com">cjdeclaro16@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<!-- contact block item example -->
+					<li class="col-xlarge-4 col-medium-4">
+						<div class="block-item">
+							<div class="row">
+								<div class="col-xlarge-4 col-large-12">
+									<div class="block-item-icon">
+										<i class="fa fa-mobile" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xlarge-8 col-large-12">
+									<h3 class="font-montserrat-reg">Call Me</h3>
+									<a href="tel:+639758233891">+6399-5005-4495</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- contact map section -->
+	<section class="map-section">
+		<div class="container">
+		
+			<div class="section-inner">
+				
+				<!-- Google map -->
+				<div id="contact-map-container">
+					<div id="contact-map"></div>
+				</div>
+				
+			</div>
+		
+		</div>
+	</section>
+	
+	<!-- contact form section -->
+	<section class="contact-form-section">
+		<div class="container">
+		
+			<div class="section-inner">
+			
+				<div class="row">
+				
+					<!-- contact text content -->
+					<div class="col-xlarge-4">
+						<div class="contact-text-content">
+							<h1 class="font-montserrat-reg large-heading">Contact</h1>
+							<div class="page-content">
+								<p>Give us a message!<br>We'll get to you as soon as we can.</p>
+								<p>We look forward to our partnership.</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- contact form -->
+					<div class="col-xlarge-8">
+						
+						<div id="success-message" class="notification"><p class="font-opensans-reg"></p></div>
+						<div id="error-message" class="notification"><p class="font-opensans-reg"></p></div>
+								
+						<!-- contact form -->
+						<form id="contact-form" method="post" name="contact-form">
+							<div class="row">
+								<div class="col-xlarge-6 col-medium-6">
+									<input type="text" class="input-field" name="contact_name" id="contact_name" value="" placeholder="Name" tabindex="1" />
+								</div>
+								<div class="col-xlarge-6 col-medium-6">
+									<input type="email" class="input-field" name="contact_email" id="contact_email" value="" placeholder="Email" tabindex="2" />
+								</div>
+							</div>
+							<div class="row">	
+								<div class="col-xlarge-12">
+									<textarea name="contact_message" id="contact_message" class="input-textarea" tabindex="4" placeholder="Message" ></textarea>
+								</div>
+							</div>
+							<input type="submit" class="secondary-button font-montserrat-reg hov-bk" value="Send Message" />
+						</form>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+	</section>
+	
+</div>
+
+<?php include 'footer.php'?>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyA4GLFtWhzBnCRjb2HBGpguelBMj7GW5EE&callback=initMap"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script src="assets/js/ajax_contact.js"></script>
+
+</body>
+</html>
