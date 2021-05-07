@@ -1,1 +1,3 @@
-# Welcome to my site!
+# Development discontinued
+
+Site now migrated to cjdeclaro.com
