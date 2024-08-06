@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+  <title>DisasterShield | Rescue</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+  <!--external css-->
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+  <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+  <link rel="icon" href="assets/img/icon.png">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+  <script src="assets/js/chart-master/Chart.js"></script>
+
+  <style>
+    .row>* {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    h3, h4 {
+      text-align: center;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .fa {
+      font-size: 25px;
+    }
+
+    .inactive {
+      color: #222222;
+    }
+
+    .footer-spacer {
+      height: 65px;
+    }
+
+    .site-footer {
+      background-color: #800000;
+    }
+
+    .black-bg{
+      background-color: #800000;
+      border: unset;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="container">
+
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box" style="margin-top: 18px">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>DisasterShield | Rescue</b></a>
+      <!--logo end-->
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="login.html" style="margin-right: 0px;">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse" style="position: fixed;">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+
+          <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a>
+          </p>
+          <h5 class="centered">John Doe</h5>
+
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="mt">
+            <a class="" href="firstaid.html">
+              <i class="fa fa-medkit"></i>
+              <span>First Aid 101</span>
+            </a>
+          </li>
+          <li class="mt">
+            <a class="" href="supplies.html">
+              <i class="fa fa-stethoscope"></i>
+              <span>Emergency Supplies</span>
+            </a>
+          </li>
+          <li class="mt">
+            <a class="" href="checklist.html">
+              <i class="fa fa-check-square-o"></i>
+              <span>Checklist</span>
+            </a>
+          </li>
+          <li class="mt">
+            <a class="" href="settings.html">
+              <i class="fa fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- bottom nav start -->
+    <div class="bottom-nav align-middle">
+      <ul class="nav justify-content-around align-middle">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive" href="information.html"><i class="fa fa-info"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive" href="report.html"><i style="font-size: 35px;" class="fa fa-life-saver"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive" href="map.html"><i class="fa fa-map-marker"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive" href="call.html"><i class="fa fa-phone"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- bottom nav end -->
+
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+
+        <div class="row">
+          <div class="col-12">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/14d09121d17/santo-tomas/" data-label_1="BATANGAS"
+              data-label_2="SANTO TOMAS" data-icons="Climacons Animated" data-theme="original">BATANGAS SANTO TOMAS</a>
+            <script>
+              ! function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = 'https://weatherwidget.io/js/widget.min.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document, 'script', 'weatherwidget-io-js');
+            </script>
+          </div>
+        </div>
+
+        <h3>RESCUER PAGE</h3>
+      </section>
+    </section>
+    <!--main content end-->
+
+    <!--footer start-->
+    <!-- <footer class="site-footer">
+      <div class="text-center">
+        2024 - PUP Sto Tomas
+        <a href="index.html#" class="go-top">
+          <i style="color: white" class="fa fa-angle-up"></i>
+        </a>
+      </div>
+      <div class="footer-spacer"></div>
+    </footer> -->
+    <!--footer end-->
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/jquery-1.8.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/jquery.sparkline.js"></script>
+
+  <!--common script for all pages-->
+  <script src="assets/js/common-scripts.js"></script>
+  <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+  <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+
+  <!--script for this page-->
+  <script src="assets/js/sparkline-chart.js"></script>
+  <script src="assets/js/zabuto_calendar.js"></script>
+
+  <script type="application/javascript">
+    $(document).ready(function () {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function (e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function () {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function () {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>
+</body>
+
+</html>
