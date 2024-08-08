@@ -29,23 +29,28 @@
 
 <body>
   <div class="container">
+    <button class="back-button" onclick="history.back()">Back</button>
     <div class="center">
-      <div class="card text-center">
-        <div class="card-header">
-          <h4 class="m-0">
-            <b>THE LIGHTSTICK APP</b>
-          </h4>
-        </div>
+      <div class="card">
         <div class="card-body">
-          <h5 class="card-title">
-            <b>Featured Modules</b>
+          <h5 class="card-title text-center">
+            <b>LED Settings</b>
           </h5>
-          <p class="card-text"></p>
-          <div class="m-2"><a href="lightstick.html" class="btn btn-primary">Lightstick</a></div>
-          <div class="m-2"><a href="led-settings.html" class="btn btn-primary">LED</a></div>
-        </div>
-        <div class="card-footer text-body-secondary">
-          <span style="font-size: 10px">v0.1.2 Alpha (Concept Prototype) 08-09-24</span>
+          <form method="GET" action="led.html">
+            <div class="mb-3">
+              <label for="text" class="form-label">Text</label>
+              <input type="text" class="form-control" id="text" name="text" placeholder="Hello!" value="Hello!">
+            </div>
+            <div class="mb-3">
+              <label for="speed" class="form-label">Speed</label>
+              <input type="number" class="form-control" id="speed" name="speed" placeholder="10" value="10">
+            </div>
+            <div class="mb-3">
+              <label for="color" class="form-label">Color</label>
+              <input type="color" class="form-control form-control-color" id="color" name="color" placeholder="#FF5733" value="#FF5733">
+            </div>
+            <input class="btn btn-success" type="submit" value="Go">
+          </form>
         </div>
       </div>
     </div>
