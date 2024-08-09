@@ -24,17 +24,17 @@
   <script src="script.js"></script>
   <script>
     var colors = [
-      "#F4A261",
-      "#2A9D8F",
-      "#E76F51",
-      "#264653",
-      "#E9C46A",
-      "#8A2BE2",
-      "#FF6347",
-      "#7FFFD4",
-      "#FFD700",
-      "#FF4500"
-    ]
+      "#FF6EC7", // Neon Pink
+      "#39FF14", // Neon Green
+      "#FF073A", // Neon Red
+      "#0FFF50", // Neon Lime Green
+      "#FFDF00", // Neon Yellow
+      "#8A2BE2", // Neon Blue Violet
+      "#FF1493", // Neon Deep Pink
+      "#00FFFF", // Neon Aqua
+      "#ADFF2F", // Neon Green Yellow
+      "#FF4500" // Neon Orange Red
+    ];
 
     function myFunction(lastDigit) {
       document.getElementById("body").style.backgroundColor = colors[lastDigit];
@@ -42,7 +42,7 @@
 
     function triggerAtExactSecond() {
       const now = new Date();
-      const millisecondsUntilNextSecond = 1000 - now.getMilliseconds();
+      const millisecondsUntilNextSecond = 2000 - now.getMilliseconds();
 
       setTimeout(() => {
         const nextNow = new Date();
@@ -53,7 +53,7 @@
           const currentNow = new Date();
           const lastDigit = currentNow.getSeconds() % 10;
           myFunction(lastDigit);
-        }, 1000);
+        }, 2000);
       }, millisecondsUntilNextSecond);
     }
 

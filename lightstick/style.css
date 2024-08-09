@@ -1,3 +1,7 @@
+body {
+  font-family: system-ui !important;
+}
+
 .back-button {
   position: fixed;
   top: 10px;
@@ -14,4 +18,9 @@
 
 .back-button:hover {
   background-color: #0056b3;
+}
+
+@media screen and (orientation:portrait) {
+  /* .back-button { top: 4vh; } */
+  .back-button { top: 45px; }
 }
