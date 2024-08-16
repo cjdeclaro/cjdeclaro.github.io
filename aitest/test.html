@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website Information Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container my-5">
+    <h2 class="mb-4">Personal Website Information Form</h2>
+    <form action="generate.html" method="get">
+      <!-- Personal Information -->
+      <h4>Personal Information</h4>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title/Profession</label>
+        <input type="text" class="form-control" id="title" placeholder="Your Title/Profession">
+      </div>
+      <div class="mb-3">
+        <label for="bio" class="form-label">Bio/About Me</label>
+        <textarea class="form-control" id="bio" rows="3" placeholder="A brief paragraph about yourself"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="profilePicture" class="form-label">Profile Picture</label>
+        <input class="form-control" type="file" id="profilePicture">
+      </div>
+
+      <!-- Website Structure -->
+      <h4>Website Structure</h4>
+      <div class="mb-3">
+        <label for="homeMessage" class="form-label">Home Page Message</label>
+        <textarea class="form-control" id="homeMessage" rows="2"
+          placeholder="Welcome message or introduction"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="about" class="form-label">About Section</label>
+        <textarea class="form-control" id="about" rows="3" placeholder="Detailed information about yourself"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="portfolio" class="form-label">Portfolio/Projects</label>
+        <textarea class="form-control" id="portfolio" rows="3" placeholder="Details about your projects"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="blog" class="form-label">Blog/Articles</label>
+        <textarea class="form-control" id="blog" rows="3" placeholder="Topics or sample blog posts"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="contactInfo" class="form-label">Contact Information</label>
+        <textarea class="form-control" id="contactInfo" rows="2"
+          placeholder="Email, social media links, etc."></textarea>
+      </div>
+
+      <!-- Design Preferences -->
+      <h4>Design Preferences</h4>
+      <div class="mb-3">
+        <label for="colorScheme" class="form-label">Color Scheme</label>
+        <input type="text" class="form-control" id="colorScheme" placeholder="Preferred colors or themes">
+      </div>
+      <div class="mb-3">
+        <label for="fonts" class="form-label">Fonts</label>
+        <input type="text" class="form-control" id="fonts" placeholder="Preferred fonts or style">
+      </div>
+      <div class="mb-3">
+        <label for="layout" class="form-label">Layout</label>
+        <input type="text" class="form-control" id="layout" placeholder="Preferred layout or inspiration sites">
+      </div>
+
+      <!-- Content -->
+      <h4>Content</h4>
+      <div class="mb-3">
+        <label for="textContent" class="form-label">Text Content</label>
+        <textarea class="form-control" id="textContent" rows="3" placeholder="Content for each section"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="images" class="form-label">Images</label>
+        <input class="form-control" type="file" id="images" multiple>
+      </div>
+      <div class="mb-3">
+        <label for="links" class="form-label">Links</label>
+        <input type="text" class="form-control" id="links"
+          placeholder="Links to your social media profiles, GitHub, etc.">
+      </div>
+
+      <!-- Functionality -->
+      <h4>Functionality</h4>
+      <div class="mb-3">
+        <label for="forms" class="form-label">Forms</label>
+        <input type="text" class="form-control" id="forms" placeholder="Contact form, other forms needed">
+      </div>
+      <div class="mb-3">
+        <label for="interactiveElements" class="form-label">Interactive Elements</label>
+        <input type="text" class="form-control" id="interactiveElements" placeholder="Sliders, galleries, animations">
+      </div>
+      <div class="mb-3">
+        <label for="seo" class="form-label">SEO</label>
+        <input type="text" class="form-control" id="seo" placeholder="Keywords or descriptions for SEO">
+      </div>
+
+      <!-- Additional Features -->
+      <h4>Additional Features</h4>
+      <div class="mb-3">
+        <label for="domain" class="form-label">Custom Domain</label>
+        <input type="text" class="form-control" id="domain" placeholder="Domain name or help choosing one">
+      </div>
+      <div class="mb-3">
+        <label for="hosting" class="form-label">Hosting</label>
+        <input type="text" class="form-control" id="hosting" placeholder="Hosting provider or suggestions needed">
+      </div>
+      <div class="mb-3">
+        <label for="cms" class="form-label">CMS</label>
+        <input type="text" class="form-control" id="cms" placeholder="Content Management System (e.g., WordPress)">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
