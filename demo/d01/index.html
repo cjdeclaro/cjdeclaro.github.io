@@ -29,6 +29,7 @@
         <h1 class="display-3">Gallery</h1>
       </div>
     </div>
+    <!-- This is where the JS appends the card components -->
     <div class="row" id="cardContainer">
     </div>
   </div>
@@ -52,6 +53,7 @@
         <h1 class="display-3">
           This is a banner
           <button type="button" onclick="expandContent()" class="btn btn-outline-secondary" id="btnExpand">Expand</button>
+          <!-- Calls the expandContent() JS function (line 99) -->
         </h1>
       </div>
     </div>
@@ -74,21 +76,26 @@
     var names = ["John", "Bill", "Steve", "Jane", "Ada"];
     var pics = ["cat.jpg", "wcat.jpg", "cat.jpg", "cat.jpg", "wcat.jpg"];
 
+    // This loop creates and appends cards to the cardContainer element (line 33)
+    // Creates unique ids by using the incrementing i variable
+    // Code has a JS function call to addShadow and removeShadow that gives the unique ids
     for(var i = 0; i < names.length; i++){
       var myContainer = document.getElementById("cardContainer");
       myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c"+i+"\" onmouseenter=\"addShadow('c"+i+"')\" onmouseleave=\"removeShadow('c"+i+"')\"><img src=\"pictures/"+pics[i]+"\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+names[i]+"</h5><p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href=\"#\" class=\"btn btn-primary\">Go somewhere</a></div></div></div>";
     }
 
+    // Adds a shadow Boostrap class to the element with the given id
     function addShadow(id){
       document.getElementById(id).classList.add("shadow");
     }
 
+    // Removes the shadow Boostrap class to the element with the given id
     function removeShadow(id){
       document.getElementById(id).classList.remove("shadow");
     }
 
+    // Switch between display none and block
     var display = "none";
-
     function expandContent(){
       var footer = document.getElementById("footer");
       var btnExpand = document.getElementById("btnExpand");
