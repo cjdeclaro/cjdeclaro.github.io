@@ -116,7 +116,7 @@
         cardContainer.innerHTML += `
         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
           <a href="view.html?pokemonName=` + pokemon.name + `">
-          <div class="card rounded-5 my-3 wow fadeIn" data-wow-duration=".8s" style="background-color: ` + colors[
+          <div class="card rounded-5 my-3" style="background-color: ` + colors[
           pokemon.types[0].type.name] + `">
             <div class="imgcontainer">
               <img
@@ -128,7 +128,7 @@
           </a>
         </div>
        `;
-        loadingBar.style.width = (i / pokemonCount) * 100 + '%';
+        loadingBar.style.width = (((i-baseline)+1) / 20) * 100 + '%';
       }
     }
 
@@ -147,10 +147,6 @@
       page -= 1;
       loadPokemon();
     }
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <script>
-    new WOW().init();
   </script>
 </body>
 
