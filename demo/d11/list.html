@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .pkmnButton:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 5px 1px;
+    }
+
+    .imgContainer {
+      background-color: lightgray;
+      border-radius: 100px;
+      width: 130px;
+      height: 130px;
+    }
+
+    .imgContainer img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <div class="display-3">Pokémon List</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a id="prevButton" class="disabled page-link" onclick="prevPage()">Previous</a></li>
+            <li class="page-item"><a id="nextButton" class="page-link" onclick="nextPage()">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row" id="pkmnContainer">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script>
+    const colors = {
+      "normal": "#CFCFC4",
+      "fire": "#F9C6A0",
+      "water": "#A0D6F9",
+      "electric": "#FAF1A0",
+      "grass": "#A8DDA0",
+      "ice": "#B2E3E5",
+      "fighting": "#E1A09B",
+      "poison": "#D0A0D5",
+      "ground": "#E6D3B8",
+      "flying": "#C6D5EF",
+      "psychic": "#F9A1C7",
+      "bug": "#D0E3A0",
+      "rock": "#D3C7B8",
+      "ghost": "#C1B0D6",
+      "dragon": "#CAB1F0",
+      "dark": "#A9A6A0",
+      "steel": "#D3D5D6",
+      "fairy": "#F8BFD3"
+    }
+
+    var container = document.getElementById("pkmnContainer");
+
+    var perPageCount = 10;
+    var page = 1;
+    const getPokemon = async () => {
+      for (var i = (((page - 1) * 10) + 1); i <= page * perPageCount; i++) {
+        var response = await fetch('https://pokeapi.co/api/v2/pokemon/' + i);
+        var pokemon = await response.json();
+
+        var content = "";
+        content += `
+          <div class="col-12">
+            <a href="view.html?pokemonName=` + pokemon.name + `">
+              <div class="card rounded-5 shadow p-4 my-3 d-flex flex-row justify-content-start align-items-center">
+                <div class="imgContainer" style="background-color:` + colors[pokemon.types[0].type.name] + `;">
+                  <img src="` + pokemon.sprites.other['official-artwork'].front_default + `">
+                </div>
+                <div class="ps-5 h2">#`+ pokemon.id + " " + pokemon.name + `</div>
+                <div class="ms-5">
+              `;
+
+        for (var j = 0; j < pokemon.types.length; j++) {
+          content += `
+            <span class="badge rounded-pill" style="background-color:` + colors[pokemon.types[j].type.name] + `;">` +
+            pokemon.types[j].type.name + `</span>
+            `;
+        }
+
+        content += `
+                </div>
+              </div>
+            </a>
+          </div>
+        `;
+
+        container.innerHTML += content;
+      }
+    }
+    getPokemon();
+
+    var nextButton = document.getElementById("nextButton");
+    var prevButton = document.getElementById("prevButton");
+
+    function nextPage(){
+      page += 1;
+      if(page>103){
+        page = 1;
+      }
+
+      if(page > 1){
+        prevButton.classList.remove("disabled");
+      } else {
+        prevButton.classList.add("disabled");
+      }
+
+      container.innerHTML = "";
+      getPokemon();
+    }
+
+    function prevPage(){
+      page -= 1;
+      if(page<1){
+        page = 103;
+      }
+      
+      if(page > 1){
+        prevButton.classList.remove("disabled");
+      } else {
+        prevButton.classList.add("disabled");
+      }
+
+      container.innerHTML = "";
+      getPokemon();
+    }
+  </script>
+</body>
+
+</html>
