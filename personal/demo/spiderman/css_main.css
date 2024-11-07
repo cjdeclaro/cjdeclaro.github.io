@@ -1,0 +1,78 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+.bgbuildingscontainer
+{
+	width:110%;
+	position:fixed;
+	bottom:-5px;
+	left:0px;
+}
+
+.bgbuildings
+{
+	width:100%;
+	animation-property: width;
+	animation-property: height;
+	transition-duration: 5s;
+}
+
+.bgspiderman
+{
+	width:100%;
+	position:fixed;
+	bottom:-5px;
+	left:0px;
+}
+
+.logocontainer
+{
+	text-align:center;
+	width:100%;
+	position:fixed;
+	bottom:16vh;
+	left:0px;
+}
+
+.logo
+{
+	width:68vh;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px)
+{
+    /* For mobile phones: */
+	
+    [class="bgbuildingscontainer"]
+	{
+		
+	}
+	
+	[class="bgbuildings"]
+	{
+		width:182%;
+	}
+	
+	[class="bgspiderman"]
+	{
+       
+	}
+	
+	[class="logocontainer"]
+	{
+		top:20%;
+		bottom:auto;
+	}
+	
+	[class="logo"]
+	{
+		animation-property: width;
+		animation-property: height;
+		transition-duration: 2s;
+        width: 89%;
+	}
+}
