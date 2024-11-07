@@ -20,72 +20,7 @@
     <div class="row my-5">
       <h1 class="display-3 pt-5">Lesson Demos</h1>
     </div>
-    <div class="row my-5">
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card m-3 shadow" style="height: fit-content">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap with Loop (BSIT 3-1)</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">October 7, 2024</h6>
-            <p class="card-text">
-              Create a Bootstrap site with Looping JS and Collapsing content
-            </p>
-            <a href="d01/" class="btn btn-primary">View Site</a>
-            <a href="https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/demo/d01/" target="_blank" class="btn btn-secondary">View Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card m-3 shadow">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap with Color Modes (BSIT 4-1)</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">October 9, 2024</h6>
-            <p class="card-text">
-              Create a Bootstrap site with Dark Mode and Light Mode
-            </p>
-            <a href="d02/" class="btn btn-primary">View Site</a>
-            <a href="https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/demo/d02/" target="_blank" class="btn btn-secondary">View Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card m-3 shadow">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap Forms (BSIT 3-1)</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">October 11, 2024</h6>
-            <p class="card-text">
-              Sample Bootstrap Forms
-            </p>
-            <a href="d05/" class="btn btn-primary">View Site</a>
-            <a href="https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/demo/d05/" target="_blank" class="btn btn-secondary">View Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card m-3 shadow">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap with Color Modes (BSIT 3-1)</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">October 11, 2024</h6>
-            <p class="card-text">
-              Create a Bootstrap site with Dark Mode and Light Mode
-            </p>
-            <a href="d03/" class="btn btn-primary">View Site</a>
-            <a href="https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/demo/d03/" target="_blank" class="btn btn-secondary">View Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card m-3 shadow">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap with Loop (BSIT 4-1)</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">October 12, 2024</h6>
-            <p class="card-text">
-              Create a Bootstrap site with Looping JS
-            </p>
-            <a href="d04/" class="btn btn-primary">View Site</a>
-            <a href="https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/demo/d04/" target="_blank" class="btn btn-secondary">View Code</a>
-          </div>
-        </div>
-      </div>
+    <div class="row my-5" id="container">
     </div>
   </div>
 
@@ -101,6 +36,75 @@
         document.getElementById("btnColor").innerHTML = "Dark Mode";
         colorMode = "light";
       }
+    }
+  </script>
+
+  <script>
+    var contents = [
+      {
+        "link": "d01",
+        "description": "Hover and Collapse"
+      },
+      {
+        "link": "d02",
+        "description": "Dark Mode"
+      },
+      {
+        "link": "d03",
+        "description": "Enhanced Dark Mode and Hover"
+      },
+      {
+        "link": "d04",
+        "description": "Gallery"
+      },
+      {
+        "link": "d05",
+        "description": "Forms"
+      },
+      {
+        "link": "d06",
+        "description": "JS Loop"
+      },
+      {
+        "link": "d07",
+        "description": "API"
+      },
+      {
+        "link": "d08",
+        "description": "API with pages"
+      },
+      {
+        "link": "d09",
+        "description": "Overlapping DIV"
+      },
+      {
+        "link": "d10",
+        "description": "Video"
+      },
+    ]
+
+    var container = document.getElementById("container");
+
+    for(var i = 0; i<contents.length; i++){
+
+      var title = contents[i].link;
+      var siteLink = "https://cjdeclaro.github.io/academic/pupstc/lessons/2425S1/WD/demo/" + title;
+      var githubLink = "https://github.com/cjdeclaro/cjdeclaro.github.io/tree/master/academic/pupstc/lessons/2425S1/WD/demo/" + title;
+      var description = contents[i].description;
+
+      container.innerHTML += `
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card my-3 rounded-5 overflow-hidden" style="height: fit-content">
+            <embed type="text/html" src="`+siteLink+`" width="100%" height="200px">
+            <div class="card-body shadow-lg">
+              <h6 class="card-title">`+title+`</h6>
+              <p class="card-text text-body-secondary">`+description+`</p>
+              <a target="_blank" href="`+githubLink+`" class="btn btn-primary">GitHub</a>
+              <a target="_blank" href="`+siteLink+`" class="btn btn-primary">Site</a>
+            </div>
+          </div>
+        </div>
+      `;
     }
   </script>
 
