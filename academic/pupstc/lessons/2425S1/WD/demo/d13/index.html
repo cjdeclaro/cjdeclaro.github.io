@@ -1,0 +1,23 @@
+<div id="container"></div>
+<input id="fname" type="text">
+<input id="lname" type="text">
+<button onclick="showData()">Show</button>
+
+<script>
+  function getFullName(fname, lname){
+    return fname + " " + lname;
+  }
+
+  function setValue(element, value){
+    element.innerHTML = value;
+  }
+
+  function showData(){
+    var fname = document.getElementById("fname");
+    var lname = document.getElementById("lname");
+    var container = document.getElementById("container");
+
+    var fullName = getFullName(fname.value, lname.value);
+    setValue(container, fullName);
+  }
+</script>
