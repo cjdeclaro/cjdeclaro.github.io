@@ -7,80 +7,121 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="icon" href="icon.png">
 </head>
 
 <body>
   <div class="container">
-    <div class="row my-5">
-      <div class="col">
-        <div class="h1">Charts</div>
+    <div class="row my-4">
+      <div class="col-12 col-md-6 mt-3">
+        <div class="card p-5">
+          <canvas id="doughnut"></canvas>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <canvas id="bar"></canvas>
+      <div class="col-12 col-md-6 mt-3">
+        <div class="card p-5">
+          <canvas id="radar"></canvas>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-3">
+        <div class="card p-5">
+          <canvas id="line"></canvas>
+        </div>
       </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
-  <script src="Chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    const data = [{
-        year: 2010,
-        count: 10
-      },
-      {
-        year: 2011,
-        count: 20
-      },
-      {
-        year: 2012,
-        count: 15
-      },
-      {
-        year: 2013,
-        count: 25
-      },
-      {
-        year: 2014,
-        count: 22
-      },
-      {
-        year: 2015,
-        count: 30
-      },
-      {
-        year: 2016,
-        count: 28
-      }
-    ];
+    const ctx = document.getElementById('doughnut');
+    const rdr = document.getElementById('radar');
+    const line = document.getElementById('line');
 
-    new Chart(document.getElementById('bar'), {
-      type: 'bar',
+    new Chart(ctx, {
+      type: 'doughnut',
       data: {
-        labels: data.map(row => row.year),
+        labels: [
+          'Red',
+          'Blue',
+          'Yellow'
+        ],
         datasets: [{
-          label: 'Acquisitions by year',
-          data: data.map(row => row.count),
-          backgroundColor: 'rgba(75, 192, 192, 0.6)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 1
+          label: 'My First Dataset',
+          data: [300, 50, 100],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 205, 86)'
+          ],
+          hoverOffset: 4
+        }]
+      },
+      options: {}
+    });
+
+    new Chart(rdr, {
+      type: 'radar',
+      data: {
+        labels: [
+          'Eating',
+          'Drinking',
+          'Sleeping',
+          'Designing',
+          'Coding',
+          'Cycling',
+          'Running'
+        ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [65, 59, 90, 81, 56, 55, 40],
+          fill: true,
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgb(255, 99, 132)',
+          pointBackgroundColor: 'rgb(255, 99, 132)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgb(255, 99, 132)'
+        }, {
+          label: 'My Second Dataset',
+          data: [28, 48, 40, 19, 96, 27, 100],
+          fill: true,
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgb(54, 162, 235)',
+          pointBackgroundColor: 'rgb(54, 162, 235)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgb(54, 162, 235)'
         }]
       },
       options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true
-          },
-          tooltip: {
-            enabled: true
+        elements: {
+          line: {
+            borderWidth: 3
           }
         }
-      }
+      },
+    });
+
+    new Chart(line, {
+      type: 'line',
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [430, 123, 435, 543, 342, 435, 576, 455, 567, 890, 891, 900],
+          fill: false,
+          borderColor: 'rgb(75, 192, 192)',
+          tension: 0.1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      },
     });
   </script>
 </body>
