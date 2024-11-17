@@ -74,15 +74,8 @@
       var firstName = document.getElementById("firstName").value.toUpperCase().replace("Ñ", "N");
       var lastName = document.getElementById("lastName").value.toUpperCase().replace("Ñ", "N");
 
-      for (var i = 0; i < BSIT2120242025S1.length; i++) {
-        if (BSIT2120242025S1[i].firstName == firstName && BSIT2120242025S1[i].lastName == lastName) {
-          setCookie("firstName", firstName, 12);
-          setCookie("lastName", lastName, 12);
-          window.location.href = "index.html";
-        }
-      }
-      for (var i = 0; i < BSIT2220242025S1.length; i++) {
-        if (BSIT2220242025S1[i].firstName == firstName && BSIT2220242025S1[i].lastName == lastName) {
+      for (var i = 0; i < DIT2120242025S1.length; i++) {
+        if (DIT2120242025S1[i].firstName == firstName && DIT2120242025S1[i].lastName == lastName) {
           setCookie("firstName", firstName, 12);
           setCookie("lastName", lastName, 12);
           window.location.href = "index.html";
