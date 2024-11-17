@@ -1,266 +1,266 @@
 var DIT2120242025S1 = [{
-    "firstName": "ARELLANO",
-    "lastName": "FRANCIS MIGUEL",
+    "lastName": "ARELLANO",
+    "firstName": "FRANCIS MIGUEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "ARNAN",
-    "lastName": "ALJON",
+    "lastName": "ARNAN",
+    "firstName": "ALJON",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "BALDOZ",
-    "lastName": "JOHN CARL",
+    "lastName": "BALDOZ",
+    "firstName": "JOHN CARL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "BLANCO",
-    "lastName": "JOHNNA MAE",
+    "lastName": "BLANCO",
+    "firstName": "JOHNNA MAE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "BRIN",
-    "lastName": "PATRICIA NICOLE",
+    "lastName": "BRIN",
+    "firstName": "PATRICIA NICOLE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CABANES",
-    "lastName": "ANGELINE",
+    "lastName": "CABANES",
+    "firstName": "ANGELINE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CAMPOSANO",
-    "lastName": "SHAMEL",
+    "lastName": "CAMPOSANO",
+    "firstName": "SHAMEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CAPONPON",
-    "lastName": "RENZO",
+    "lastName": "CAPONPON",
+    "firstName": "RENZO",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CARAIG",
-    "lastName": "JANELLE",
+    "lastName": "CARAIG",
+    "firstName": "JANELLE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CASTILLO",
-    "lastName": "PRINCE KRALED",
+    "lastName": "CASTILLO",
+    "firstName": "PRINCE KRALED",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CHAN",
-    "lastName": "JUSTINE HENRY",
+    "lastName": "CHAN",
+    "firstName": "JUSTINE HENRY",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CORDERO",
-    "lastName": "JOHN KENNETH",
+    "lastName": "CORDERO",
+    "firstName": "JOHN KENNETH",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "CRUZ",
-    "lastName": "JOHN MARK",
+    "lastName": "CRUZ",
+    "firstName": "JOHN MARK",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DE CASTRO",
-    "lastName": "ZET WESLEY",
+    "lastName": "DE CASTRO",
+    "firstName": "ZET WESLEY",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DE MESA",
-    "lastName": "JOHN ADRIAN",
+    "lastName": "DE MESA",
+    "firstName": "JOHN ADRIAN",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DELA CRUZ",
-    "lastName": "LANCE ANDREW",
+    "lastName": "DELA CRUZ",
+    "firstName": "LANCE ANDREW",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DELA CUEVA",
-    "lastName": "KIM ANDREI",
+    "lastName": "DELA CUEVA",
+    "firstName": "KIM ANDREI",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DELA ROSA",
-    "lastName": "MARGARETTE",
+    "lastName": "DELA ROSA",
+    "firstName": "MARGARETTE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "DELOS REYES",
-    "lastName": "CHRISTELLE KEITH",
+    "lastName": "DELOS REYES",
+    "firstName": "CHRISTELLE KEITH",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "ESQUIVEL",
-    "lastName": "SHAINE",
+    "lastName": "ESQUIVEL",
+    "firstName": "SHAINE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "FALIBLE",
-    "lastName": "PATRICIA",
+    "lastName": "FALIBLE",
+    "firstName": "PATRICIA",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "FERNANDEZ",
-    "lastName": "JAY",
+    "lastName": "FERNANDEZ",
+    "firstName": "JAY",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "GODOY",
-    "lastName": "JOHN PAUL",
+    "lastName": "GODOY",
+    "firstName": "JOHN PAUL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "GUANTES",
-    "lastName": "SHENHELLE ASHLEY",
+    "lastName": "GUANTES",
+    "firstName": "SHENHELLE ASHLEY",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "GUEVARRA",
-    "lastName": "CLIDE IVANS",
+    "lastName": "GUEVARRA",
+    "firstName": "CLIDE IVANS",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "GUINTO",
-    "lastName": "JHON JOSHUA",
+    "lastName": "GUINTO",
+    "firstName": "JHON JOSHUA",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "HERNANDEZ",
-    "lastName": "JOHN MATTHEW",
+    "lastName": "HERNANDEZ",
+    "firstName": "JOHN MATTHEW",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "LANDICHO",
-    "lastName": "AARON JAMES",
+    "lastName": "LANDICHO",
+    "firstName": "AARON JAMES",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "LARINO",
-    "lastName": "JAN KRISTER",
+    "lastName": "LARINO",
+    "firstName": "JAN KRISTER",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "LERIA",
-    "lastName": "ARVIN DAVID",
+    "lastName": "LERIA",
+    "firstName": "ARVIN DAVID",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MACALANDA",
-    "lastName": "JOHN MICHAEL",
+    "lastName": "MACALANDA",
+    "firstName": "JOHN MICHAEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MALBATAAN",
-    "lastName": "LESTIN JAN",
+    "lastName": "MALBATAAN",
+    "firstName": "LESTIN JAN",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MANIPOL",
-    "lastName": "AIRA MAE",
+    "lastName": "MANIPOL",
+    "firstName": "AIRA MAE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MEDRANO",
-    "lastName": "JEROME",
+    "lastName": "MEDRANO",
+    "firstName": "JEROME",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MENDOZA",
-    "lastName": "JONARD PAUL",
+    "lastName": "MENDOZA",
+    "firstName": "JONARD PAUL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MENDOZA",
-    "lastName": "KARL ANDREI",
+    "lastName": "MENDOZA",
+    "firstName": "KARL ANDREI",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MERCADO",
-    "lastName": "KEANNU",
+    "lastName": "MERCADO",
+    "firstName": "KEANNU",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MINOR",
-    "lastName": "GWYNETH",
+    "lastName": "MINOR",
+    "firstName": "GWYNETH",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MONTA",
-    "lastName": "LINEL BENJ MARTIN",
+    "lastName": "MONTA",
+    "firstName": "LINEL BENJ MARTIN",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MORALEJA",
-    "lastName": "DECK JEIRO",
+    "lastName": "MORALEJA",
+    "firstName": "DECK JEIRO",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "MORES",
-    "lastName": "JODIEL MHAE",
+    "lastName": "MORES",
+    "firstName": "JODIEL MHAE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "NARCISO",
-    "lastName": "SHAIRA MARIE",
+    "lastName": "NARCISO",
+    "firstName": "SHAIRA MARIE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "PARAGAS",
-    "lastName": "JOSH ANDREI",
+    "lastName": "PARAGAS",
+    "firstName": "JOSH ANDREI",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "PIAMONTE",
-    "lastName": "CARL JUSTINE",
+    "lastName": "PIAMONTE",
+    "firstName": "CARL JUSTINE",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "PITOGO",
-    "lastName": "JET NATHANIEL",
+    "lastName": "PITOGO",
+    "firstName": "JET NATHANIEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "POONIN",
-    "lastName": "CARL JOSEPH",
+    "lastName": "POONIN",
+    "firstName": "CARL JOSEPH",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "REPAYO",
-    "lastName": "JOHN RISEN",
+    "lastName": "REPAYO",
+    "firstName": "JOHN RISEN",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "SAN DIEGO",
-    "lastName": "ALVIN JOSEPH",
+    "lastName": "SAN DIEGO",
+    "firstName": "ALVIN JOSEPH",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "SAWALI",
-    "lastName": "AIVAN",
+    "lastName": "SAWALI",
+    "firstName": "AIVAN",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "TOLENTINO",
-    "lastName": "JANE ANGELOU",
+    "lastName": "TOLENTINO",
+    "firstName": "JANE ANGELOU",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "TRINIDAD",
-    "lastName": "RYLE GABRIEL",
+    "lastName": "TRINIDAD",
+    "firstName": "RYLE GABRIEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "VILLANUEVA",
-    "lastName": "JIMUEL",
+    "lastName": "VILLANUEVA",
+    "firstName": "JIMUEL",
     "section": "DIT 2-1"
   },
   {
-    "firstName": "VILLAROSA",
-    "lastName": "JHIE ANN PEARL",
+    "lastName": "VILLAROSA",
+    "firstName": "JHIE ANN PEARL",
     "section": "DIT 2-1"
   }
 ]
