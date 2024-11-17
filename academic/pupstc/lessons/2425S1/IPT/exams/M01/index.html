@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPT | M01</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../../../assets/css/style.css">
+  <link rel="icon" href="../../../../../assets/img/logo-pup.png">
+
+  <style>
+    body {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Old versions of Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid mb-4">
+    <div class="d-flex flex-row flex-start p-2 align-items-center">
+      <div class="imgcontainer">
+        <img src="../../../../../assets/img/logo-pup.png">
+      </div>
+      <div class="ms-2">
+        <div class="title-1">
+          Republic of the Philippines
+        </div>
+        <div class="title-2">
+          <span>P</span>OLYTECHNIC <span>U</span>NIVERSITY <span class="small">OF THE</span> <span>P</span>HILIPPINES
+        </div>
+        <div class="title-3">
+          Sto Tomas Campus
+        </div>
+        <div class="title-4">
+          Information Technology Program
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5 pb-5">
+    <div class="row">
+      <div class="col">
+        <div class="h1 mb-0">IPT M01</div>
+        <div id="fullname"></div>
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col">
+        <table class="table table-bordered table-condensed cf">
+          <thead class="cf">
+            <tr>
+              <th>Question</th>
+              <th>Instruction</th>
+              <th>Content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title="Question"><b>A</b></td>
+              <td data-title="Instruction">Code the stated problem</td>
+              <td data-title="Content" id="examContent"></td>
+            </tr>
+            <tr>
+              <td data-title="Question"><b>B</b></td>
+              <td data-title="Instruction">Code the stated problem</td>
+              <td data-title="Content">
+                Save your first name in a variable. Remove the spaces. For each letter, create a pyramid via looping.
+                <br><br>
+                Example output:
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;j<br>
+                &nbsp;&nbsp;ooo<br>
+                &nbsp;hhhhh<br>
+                nnnnnnn<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="poweredby d-flex flex-row align-items-end justify-content-end p-3">
+    <div class="me-2">
+      Powered by the Computer Society
+    </div>
+    <img src="../../../../../assets/img/logo-comsoc.png">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="../../../../../assets/js/script.js"></script>
+  <script>
+    var firstname = "";
+    var lastname = "";
+    var fullname = "";
+
+    function renderContent() {
+      var a = firstname.slice(0, 1).toLowerCase();
+      var b = firstname.slice(-1).toLowerCase();
+      var c = lastname.slice(0, 1).toLowerCase();
+      var d = lastname.slice(-1).toLowerCase();
+      var e = firstname.slice(1, 2).toLowerCase();
+      var f = lastname.slice(2, 3).toLowerCase();
+
+      var group1 = ["a", "b", "c", "d", "e"];
+      var group2 = ["f", "g", "h", "i", "j"];
+      var group3 = ["k", "l", "m", "n", "o"];
+      var group4 = ["p", "q", "r", "s", "t"];
+      var group5 = ["u", "v", "w", "x", "y", "z"];
+
+      var letters = [a, b, c, d, e, f];
+      var groups = [group1, group2, group3, group4, group5];
+      var combination = [1, 1, 1, 1, 1, 1];
+
+      var lettercounter = 0;
+      for (var i = 0; i < letters.length; i++) {
+        var groupcounter = 1;
+        for (var j = 0; j < groups.length; j++) {
+          if (groups[j].includes(letters[i])) {
+            combination[lettercounter] = groupcounter;
+          }
+          groupcounter += 1;
+        }
+        lettercounter += 1;
+      }
+
+      var amount = '100';
+      var gift = 'mug';
+      var special_birthday = '19th';
+      var goal = 'washing machine';
+      var amount_taken = '10';
+      var amount_sold = '50';
+
+      if (combination[1] == 2) {
+        amount = '110';
+      } else if (combination[0] == 3) {
+        amount = '120';
+      } else if (combination[0] == 4) {
+        amount = '130';
+      } else if (combination[0] == 5) {
+        amount = '140';
+      }
+
+      if (combination[2] == 2) {
+        gift = 'robot';
+      } else if (combination[1] == 3) {
+        gift = 'picture frame';
+      } else if (combination[1] == 4) {
+        gift = 'pillow';
+      } else if (combination[1] == 5) {
+        gift = 'figurine';
+      }
+
+      if (combination[3] == 2) {
+        special_birthday = '17th';
+      } else if (combination[2] == 3) {
+        special_birthday = '21st';
+      } else if (combination[2] == 4) {
+        special_birthday = '23rd';
+      } else if (combination[2] == 5) {
+        special_birthday = '25th';
+      }
+
+      if (combination[4] == 2) {
+        amount_taken = '15';
+      } else if (combination[3] == 3) {
+        amount_taken = '20';
+      } else if (combination[3] == 4) {
+        amount_taken = '25';
+      } else if (combination[3] == 5) {
+        amount_taken = '30';
+      }
+
+      if (combination[5] == 2) {
+        goal = 'smart phone';
+      } else if (combination[4] == 3) {
+        goal = 'laptop';
+      } else if (combination[4] == 4) {
+        goal = 'printer';
+      } else if (combination[4] == 5) {
+        goal = 'television';
+      }
+
+      if (combination[0] == 2) {
+        amount_sold = '55';
+      } else if (combination[5] == 3) {
+        amount_sold = '60';
+      } else if (combination[5] == 4) {
+        amount_sold = '65';
+      } else if (combination[5] == 5) {
+        amount_sold = '70';
+      }
+
+      var p1 =
+        'Using Java Swing: know the approximate age of a person by getting their birth year and subtracting it from the current year.<br><br>';
+      var p2 =
+        'For every birthday starting from 1 year old, the person receives a present: for every odd birthday age, they receive ' +
+        amount + ' pesos. For every even birthday age, they receive a ' + gift + '+<br><br>';
+      var p3 = 'If they were able to reach their ' + special_birthday +
+        ' birthday, they will receive 1000 pesos instead of ' + amount + ' pesos.<br><br>';
+      var p4 = 'The person keeps all of those in a storage box.<br><br>';
+      var p5 = 'But unknown to the person, their sibling takes ' + amount_taken + ' pesos every birthday and a ' +
+        gift +
+        ' for every decade (32yrs old = 3 ' + gift + 's, 19yrs old = 1 ' + gift + ', 7yrs old = 0 ' + gift +
+        ').<br><br>';
+      var p6 = 'Ask the person to input the value of a ' + goal + '.<br><br>';
+      var p7 = 'If the person will sell all their ' + gift + ' for ' + amount_sold +
+        ' pesos each, with the addition of the money they got for each odd birthday age, will they be able to afford the ' +
+        goal + '?<br><br><br>';
+      var p8 = 'Example output scenarios:<br><br>';
+      var p9 = '<i>The person can afford the ' + goal +
+        ' worth 10000 pesos with their money amounting to 13000 pesos, leaving them with 3000 pesos.</i><br>';
+      var p10 = '<i>The person can\'t afford the ' + goal +
+        ' worth 15000 pesos with their money amounting to 10000 pesos only, they need 5000 pesos more.</i>';
+
+      var examContent = document.getElementById("examContent");
+      var fullnameE = document.getElementById("fullname");
+      fullnameE.innerHTML = "RENDERED FOR " + fullname;
+      examContent.innerHTML = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10;
+    }
+
+    function loadCookies() {
+      firstname = getCookie("firstName");
+      lastname = getCookie("lastName");
+      fullname = firstname + " " + lastname;
+
+      if (lastname != "") {
+        renderContent();
+      } else {
+        window.location.href = "login.html";
+      }
+    }
+
+    loadCookies();
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
+</body>
+
+</html>

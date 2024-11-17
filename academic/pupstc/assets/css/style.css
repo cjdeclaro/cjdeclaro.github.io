@@ -1,0 +1,52 @@
+.imgcontainer {
+  width: 80px;
+}
+
+.imgcontainer img {
+  width: 100%;
+}
+
+.title-1 {
+  font-size: small;
+  line-height: 1;
+}
+
+.title-2 {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 0.9;
+  font-size: 18px;
+}
+
+.title-2 span {
+  font-size: 22px;
+}
+
+.title-2 .small {
+  font-size: 15px;
+}
+
+.title-3 {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.title-4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.poweredby {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.poweredby img {
+  width: 40px;
+}
+
+.poweredby .me-2 {
+  font-size: small;
+}
