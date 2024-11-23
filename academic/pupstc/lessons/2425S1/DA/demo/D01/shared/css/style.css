@@ -1,0 +1,21 @@
+.banner {
+  background-color: maroon;
+}
+
+.title,
+.text-links {
+  color: white;
+}
+
+.text-links {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
