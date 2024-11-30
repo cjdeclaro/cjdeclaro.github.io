@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.min.css">
+
+  <style>
+    .pokemon {
+      animation: fadeIn; /* wow animation */
+      animation-duration: 2s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <h1>PokeDex</h1>
+  </div>
+
+<!-- 
+  <div class="poke-container">
+    <div class="pokemon wow" style="background-color: #F5F5F5;">
+      <div class="img-container">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png">
+      </div>
+  
+      <div class="info">
+        <span class="number">#num</span>
+        <h3 class="name">name</h3>
+        <small class="type">Type: <span>type</span></small>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="poke-container" id="poke_container"></div>
+
+  <div class="footer wow">
+    <p>All rights reserved.</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
