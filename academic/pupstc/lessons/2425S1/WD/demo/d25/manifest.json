@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "HDF Automation",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [{
+    "js": ["jquery.min.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      min-width: 1000px;
+      min-height: 1000px;
+    }
+  </style>
+</head>
+
+<body onkeydown="move()">
+  <div style="position: relative; overflow: hidden; width: 100%; height: 90vh;">
+    <img src="f1.png" id="sprite" style="width:200px; position: absolute; top: 0px; left: 0px;">
+  </div>
+
+  <script>
+    var i = 1;
+    var sprite = document.getElementById("sprite");
+
+    var x = 0;
+    var y = 0;
+
+    var movementSpeed = 30;
+
+    function move() {
+      if (event.key == "ArrowRight") {
+        x += movementSpeed;
+        sprite.style.left = x + "px";
+      } else if (event.key == "ArrowLeft") {
+        x -= movementSpeed;
+        sprite.style.left = x + "px";
+      } else if (event.key == "ArrowDown") {
+        y += movementSpeed;
+        sprite.style.top = y + "px";
+      } else if (event.key == "ArrowUp") {
+        y -= movementSpeed;
+        sprite.style.top = y + "px";
+      }
+
+      console.log(event.key);
+    }
+
+    function myLoop() {
+      setTimeout(function () {
+        sprite.src = "f" + i + ".png";
+        if (i == 1) {
+          i = 2;
+        } else if (i == 2) {
+          i = 3;
+        } else if (i == 3) {
+          i = 4;
+        } else {
+          i = 1;
+        }
+        myLoop();
+      }, 1000 / 6)
+    }
+
+    myLoop();
+  </script>
+
+</body>
+
+</html>
