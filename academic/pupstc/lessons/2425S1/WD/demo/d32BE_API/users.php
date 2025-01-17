@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
 include("connect.php");
 
 $method = $_SERVER['REQUEST_METHOD'];
@@ -25,7 +26,7 @@ switch ($method) {
 
 function handleGet($pdo)
 {
-  $sql = "SELECT * FROM users";
+  $sql = "SELECT * FROM users LEFT JOIN userInfo ON users.userInfoID = userInfo.userInfoID";
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -34,14 +35,19 @@ function handleGet($pdo)
 
 function handlePost($pdo, $input)
 {
-  $sql = "INSERT INTO users (userName, password, email, phoneNumber, userInfoID) VALUES (:userName, :password, :email, :phoneNumber, :userInfoID)";
+  $sql = "
+  INSERT INTO userInfo (firstName, lastName) VALUES (:firstName, :lastName);
+  SELECT MAX(userInfoID) AS lastInsertedID INTO @lastID FROM userinfo;
+  INSERT INTO users (userName, password, email, phoneNumber, userInfoID) VALUES (:userName, :password, :email, :phoneNumber, @lastID);
+  ";
   $stmt = $pdo->prepare($sql);
   $stmt->execute([
     'userName' => $input['userName'],
     'password' => $input['password'],
     'email' => $input['email'],
     'phoneNumber' => $input['phoneNumber'],
-    'userInfoID' => '1'
+    'firstName' => $input['firstName'],
+    'lastName' => $input['lastName']
   ]);
 
   echo json_encode(['message' => 'User created successfully']);
@@ -64,7 +70,8 @@ function handlePut($pdo, $input)
     'email' => $input['email'],
     'phoneNumber' => $input['phoneNumber'],
     'userInfoID' => '1',
-    'id' => $input['id']]);
+    'id' => $input['id']
+  ]);
   echo json_encode(['message' => 'User updated successfully']);
 }
 
