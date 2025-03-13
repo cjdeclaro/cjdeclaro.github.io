@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.banner {
+  background-color: purple;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+}
+
+.content {
+  margin: 30px;
+  background-color: plum;
+  color: white;
+  font-style: italic;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+}
