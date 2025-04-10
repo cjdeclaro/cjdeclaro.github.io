@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Demo</title>
+
+  <script>
+    function changeLink(){
+      document.getElementById("mylink").href = "https://github.com";
+      document.getElementById("mylink").innerHTML = "Take me to GitHub!";
+
+      document.getElementById("box1").style.width = "100%";
+      document.getElementById("box1").style.backgroundColor = "purple";
+      document.getElementById("box1").innerHTML = "HELLO!";
+    }
+  </script>
+
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box1"></div>
+
+  <a id="mylink" href="https://google.com" target="_blank">Take me to google</a>
+
+  <button onclick="changeLink()">Change Link</button>
+</body>
+</html>

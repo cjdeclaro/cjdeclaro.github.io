@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Demo</title>
+
+  <script>
+    var state = "off";
+
+    function changeState(){
+      if(state == "off"){
+        state = "on";
+        document.getElementById("passwordbox").type = "text";
+        document.getElementById("btn").innerHTML = "Hide";
+      } else {
+        state = "off";
+        document.getElementById("passwordbox").type = "password";
+        document.getElementById("btn").innerHTML = "Show";
+      }
+      
+    }
+  </script>
+
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <input type="password" id="passwordbox">
+
+  <button onclick="changeState()" id="btn">Show</button>
+</body>
+</html>

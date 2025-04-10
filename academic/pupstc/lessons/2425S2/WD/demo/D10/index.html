@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Demo</title>
+
+  <script>
+    function sayHello(){
+      document.getElementById("box1").innerHTML = "HELLO"
+    }
+  </script>
+
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box1">
+    HELLO WORLD
+  </div>
+
+  <button onclick="sayHello()">Click Me</button>
+</body>
+</html>
