@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="oneui.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="header">
+          Gallery
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="categories">
+          <span>All</span>
+          <span>Selfies</span>
+          <span>Videos</span>
+          <span>Saved</span>
+          <span onclick="pinch()">-</span>
+          <span onclick="reversepinch()">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="gallery d-flex flex-wrap justify-content-start">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+  <script>
+    var zoomState = 2;
+
+    var dimension = ["20px", "49px", "110px", "170px", "350px"];
+    var radius = ["0px", "0px", "10px", "10px", "10px"];
+    var margins = ["1px", "1px", "5px", "5px", "5px"];
+
+    function pinch(){
+      zoomState -= 1;
+      zoomState = zoomState < 0 ? 0 : zoomState;
+
+      var pictureElements = document.getElementsByClassName("pic");
+      
+      for (var i = 0; i < pictureElements.length; i++){
+        pictureElements[i].style.width = dimension[zoomState];
+        pictureElements[i].style.height = dimension[zoomState];
+        pictureElements[i].style.borderRadius = radius[zoomState];
+        pictureElements[i].style.margin = margins[zoomState];
+      }
+    }
+
+    function reversepinch(){
+      zoomState += 1;
+      zoomState = zoomState > 4 ? 4 : zoomState;
+
+      var pictureElements = document.getElementsByClassName("pic");
+      
+      for (var i = 0; i < pictureElements.length; i++){
+        pictureElements[i].style.width = dimension[zoomState];
+        pictureElements[i].style.height = dimension[zoomState];
+        pictureElements[i].style.borderRadius = radius[zoomState];
+        pictureElements[i].style.margin = margins[zoomState];
+      }
+    }
+  </script>
+</body>
+
+</html>

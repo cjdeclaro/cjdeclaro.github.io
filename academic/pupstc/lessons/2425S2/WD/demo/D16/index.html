@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  
+  <script>
+    function calculate(value){
+      document.getElementById("output").value += value;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container p-5 mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card rounded-5 shadow p-5">
+          <div class="text-center h4 mb-5">Calculator</div>
+          <div class="row my-3">
+            <div class="col-12">
+              <label for="output" class="form-label">Output</label>
+              <input id="output" type="text" class="form-control" disabled>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div onclick="calculate(7)" class="btn btn-secondary p-3 h4">
+                7
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(8)" class="btn btn-secondary p-3 h4">
+                8
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(9)" class="btn btn-secondary p-3 h4">
+                9
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate('/')" class="btn btn-secondary p-3 h4">
+                /
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div onclick="calculate(4)" class="btn btn-secondary p-3 h4">
+                4
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(5)" class="btn btn-secondary p-3 h4">
+                5
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(6)" class="btn btn-secondary p-3 h4">
+                6
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate('*')" class="btn btn-secondary p-3 h4">
+                X
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div onclick="calculate(1)" class="btn btn-secondary p-3 h4">
+                1
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(2)" class="btn btn-secondary p-3 h4">
+                2
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(3)" class="btn btn-secondary p-3 h4">
+                3
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate('-')" class="btn btn-secondary p-3 h4">
+                -
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div onclick="calculate()" class="btn btn-secondary p-3 h4">
+                =
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate(0)" class="btn btn-secondary p-3 h4">
+                0
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate('.')" class="btn btn-secondary p-3 h4">
+                .
+              </div>
+            </div>
+            <div class="col">
+              <div onclick="calculate('+')" class="btn btn-secondary p-3 h4">
+                +
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

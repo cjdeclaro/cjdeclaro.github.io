@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <script>
+    var a = 0;
+    function login(name){ //parameter
+      document.getElementById("banner").innerHTML = "Welcome " + name;
+      // window.alert("Welcome " + name);
+      console.log("Na click ito " + a + " times");
+    }
+
+    function printpage(){
+      window.print();
+
+      var a = "John's Phone";
+      var b = 'Jane';
+      var c = 'John\'s Phone';
+      var d = 'He said "Hello"';
+      var e = "He said \"Hello\"";
+
+      var f = true;
+
+      var num1 = 5;
+      var num2 = 3;
+      var isOneLarger = num1 > num2;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid p-5" style="background-color: pink;">
+    <div class="row">
+      <div class="col">
+        <div class="h3 text-center" id="banner">
+          Welcome Visitor
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-3 text-center shadow">
+    <div class="row">
+      <div class="col">
+        About
+      </div>
+      <div class="col">
+        Projects
+      </div>
+      <div class="col">
+        Contact
+      </div>
+      <div onclick="login('Jane Air')" class="col">
+        Login
+      </div>
+      <div onclick="printpage()" class="col">
+        Print page
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
