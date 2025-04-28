@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    .custom-button{
+      width: 100px;
+    }
+
+    .custom-button.content{
+      width: 200px;
+    }
+
+    .custom-button:hover{
+      background-color: rgb(240, 240, 240);
+      cursor: pointer;
+    }
+
+    .topcontainer{
+      height: 15dvh;
+    }
+
+    .categories {
+      width: fit-content;
+    }
+
+    .maincontainer {
+      height: 75dvh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row pt-3">
+      <div class="col-9">
+        <div class="row">
+          <div class="col pb-3">
+            <div class="card overflow-scroll p-3 topcontainer">
+              <div class="d-flex flex-start flex-row categories" id="categories">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card overflow-scroll p-3 maincontainer">
+              <div class="d-flex flex-start flex-row flex-wrap" id="maincontainer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card p-3 overflow-scroll" style="height: 100%;">
+          <div id="receipt">
+
+          </div>
+          <div class="mt-4 d-flex flex-row justify-content-between">
+            <div><b>TOTAL</b></div>
+            <div><b id="totalValue">0</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var products = [
+      {
+        "category": "Beverage",
+        "contents": [
+          {
+            "isAvailable": true,
+            "name": "Coke",
+            "code": "CK",
+            "sizes": [
+              {
+                "name": "regular",
+                "code": "RG",
+                "price": 30
+              },
+              {
+                "name": "medium",
+                "code": "MD",
+                "price": 35
+              },
+              {
+                "name": "large",
+                "code": "LG",
+                "price": 40
+              }
+            ]
+          },
+          {
+            "isAvailable": true,
+            "name": "Sprite",
+            "code": "SPRT",
+            "sizes": [
+              {
+                "name": "regular",
+                "code": "RG",
+                "price": 30
+              },
+              {
+                "name": "medium",
+                "code": "MD",
+                "price": 35
+              },
+              {
+                "name": "large",
+                "code": "LG",
+                "price": 40
+              }
+            ]
+          },
+          {
+            "isAvailable": true,
+            "name": "Royal",
+            "code": "RYL",
+            "sizes": [
+              {
+                "name": "regular",
+                "code": "RG",
+                "price": 30
+              },
+              {
+                "name": "medium",
+                "code": "MD",
+                "price": 35
+              },
+              {
+                "name": "large",
+                "code": "LG",
+                "price": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Burgers",
+        "contents": [
+          {
+            "isAvailable": true,
+            "name": "Burger McDo",
+            "code": "BRGR",
+            "price": 50
+          },
+          {
+            "isAvailable": true,
+            "name": "Chicken Burger",
+            "code": "CKN BRGR",
+            "price": 50
+          },
+          {
+            "isAvailable": true,
+            "name": "Cheesy Burger McDo",
+            "code": "CSY BRGR",
+            "price": 50
+          },
+          {
+            "isAvailable": true,
+            "name": "Cheeseburger",
+            "code": "CSBRGR",
+            "price": 50
+          },
+          {
+            "isAvailable": false,
+            "name": "Big Mac",
+            "code": "BG MAC",
+            "price": 50
+          }
+        ]
+      },
+      {
+        "category": "Pasta",
+        "contents": [
+          {
+            "isAvailable": true,
+            "name": "McSpaghetti",
+            "code": "SPAG",
+            "price": 50
+          }
+        ]
+      }
+    ]
+
+    var total = 0;
+
+    function loadCategories(){
+      var categoriesContainer = document.getElementById("categories");
+
+      products.forEach((product, index) => {
+        categoriesContainer.innerHTML += `
+          <div onclick="loadProducts('`+index+`')" class="card mx-1 custom-button p-3 text-center">
+            <small>`+product.category+`</small>
+          </div>
+        `;
+      });
+    }
+
+    function loadProducts(categoryIndex){
+      var maincontainer = document.getElementById("maincontainer");
+      maincontainer.innerHTML = "";
+
+      if(categoryIndex==0){
+        products[categoryIndex].contents.forEach(content => {
+          content.sizes.forEach(size => {
+            maincontainer.innerHTML += `
+              <div onclick="addToReceipt('`+size.price+`','`+content.code+size.code+`')" class="card mx-1 my-2 custom-button content p-3 text-center">
+                <small>`+content.name + ' ' + size.code+`</small>
+              </div>
+            `;
+          });
+        });
+      } else {
+        products[categoryIndex].contents.forEach(content => {
+          maincontainer.innerHTML += `
+            <div onclick="addToReceipt('`+content.price+`','`+content.code+`')" class="card mx-1 my-2 custom-button content p-3 text-center">
+              <small>`+content.name+`</small>
+            </div>
+          `;
+        });
+      }
+      
+    }
+
+    function addToReceipt(price, code){
+      var receiptContainer = document.getElementById("receipt");
+      total = parseFloat(total) + parseFloat(price);
+
+      totalValueElement = document.getElementById("totalValue");
+      totalValueElement.innerHTML = total;
+      
+      receiptContainer.innerHTML += `
+        <div class="d-flex flex-row justify-content-between">
+          <div><small>`+code+`</small></div>
+          <div><small>`+price+`</small></div>
+        </div>
+      `;
+    }
+
+    loadCategories();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

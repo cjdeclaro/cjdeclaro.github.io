@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADET 2024 2025 S2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <div class="display-3">
+          Student Works
+        </div>
+      </div>
+    </div>
+    <div class="row" id="container">
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+
+  <script>
+    var githubData = [{
+        "lastName": "ABELLO",
+        "firstName": "ALLIANA",
+        "username": "yanaabello"
+      },
+      {
+        "lastName": "AGUILAR",
+        "firstName": "KISSY",
+        "username": "kissyaguilar"
+      },
+      {
+        "lastName": "ALBERTO",
+        "firstName": "MA. ALTHEA",
+        "username": "theaalberto"
+      },
+      {
+        "lastName": "ALGABA",
+        "firstName": "ALTHEA",
+        "username": "eyaalgaba"
+      },
+      {
+        "lastName": "ANGELES",
+        "firstName": "EMANUEL VINCENT",
+        "username": "vincentangeles"
+      },
+      {
+        "lastName": "APACIONADO",
+        "firstName": "JON JOSIAH",
+        "username": "siah-6"
+      },
+      {
+        "lastName": "BARQUEROS",
+        "firstName": "SCHARIZZE ANN",
+        "username": "scharizzeannbarqueros"
+      },
+      {
+        "lastName": "BATISTIL",
+        "firstName": "NAJILA JOANNE",
+        "username": "najilabatistil"
+      },
+      {
+        "lastName": "BERNARDO",
+        "firstName": "AUSTINE JADE",
+        "username": "ajbernardo"
+      },
+      {
+        "lastName": "BLANCO",
+        "firstName": "CHRISTYN",
+        "username": "chinrstyabclno"
+      },
+      {
+        "lastName": "CARANDANG",
+        "firstName": "JERONIMO",
+        "username": "sond3rr"
+      },
+      {
+        "lastName": "CASTILLO",
+        "firstName": "JOMARI",
+        "username": "jomscasti"
+      },
+      {
+        "lastName": "CATO",
+        "firstName": "MARIELLE ALYSSA",
+        "username": "mrllalyssacto"
+      },
+      {
+        "lastName": "CORONADO",
+        "firstName": "CHRISTIAN",
+        "username": "chancoronado"
+      },
+      {
+        "lastName": "DE GRANO",
+        "firstName": "PRINCE KARL",
+        "username": "peekay025"
+      },
+      {
+        "lastName": "DE VERA",
+        "firstName": "JOHANN EMMANUEL",
+        "username": "whohann"
+      },
+      {
+        "lastName": "DELA TORRE",
+        "firstName": "MARK JOSEPH",
+        "username": "e2-m4rk"
+      },
+      {
+        "lastName": "DERILO",
+        "firstName": "KENT MATHEW",
+        "username": "kentdrlo"
+      },
+      {
+        "lastName": "ENDAYA",
+        "firstName": "ALLEN BENEDICT",
+        "username": "onlyteyl"
+      },
+      {
+        "lastName": "ESTOQUE",
+        "firstName": "AYISHA SOFHIA",
+        "username": "ayisha-estoque"
+      },
+      {
+        "lastName": "GALARRITA",
+        "firstName": "JOHN STEPHEN",
+        "username": "jsnotprom"
+      },
+      {
+        "lastName": "GAMANA",
+        "firstName": "KAYE CHRISTINE",
+        "username": "kayegamana"
+      },
+      {
+        "lastName": "GRAPANI",
+        "firstName": "JALEM LOUISE",
+        "username": "jalemgrapani"
+      },
+      {
+        "lastName": "IBARONDO",
+        "firstName": "JANNAH",
+        "username": "ibarondo"
+      },
+      {
+        "lastName": "IDANAN",
+        "firstName": "MARK TRISTAN",
+        "username": "marktristan25"
+      },
+      {
+        "lastName": "ISLES",
+        "firstName": "MARIFIEL COLEEN",
+        "username": "colelezzz"
+      },
+      {
+        "lastName": "LANTIN",
+        "firstName": "VEA AVYGAIL",
+        "username": "veaavygail"
+      },
+      {
+        "lastName": "LEYCANO",
+        "firstName": "ALDIN",
+        "username": "aleycano"
+      },
+      {
+        "lastName": "LUANSING",
+        "firstName": "MIKE DHAREN LEI",
+        "username": "Md-Lei"
+      },
+      {
+        "lastName": "MACATANGAY",
+        "firstName": "JANNA MAE",
+        "username": "jannamacatangay"
+      },
+      {
+        "lastName": "MALABAG",
+        "firstName": "ZIELCO CLOEI",
+        "username": "zielcocloei"
+      },
+      {
+        "lastName": "MALABANAN",
+        "firstName": "JOSHUA",
+        "username": "jojo-ym"
+      },
+      {
+        "lastName": "MALABUYO",
+        "firstName": "JHON LOYD",
+        "username": "lloydmalabuyo"
+      },
+      {
+        "lastName": "MALIZA",
+        "firstName": "JOSEPH DANIEL",
+        "username": "JosephDanMaliza"
+      },
+      {
+        "lastName": "MARAJAS",
+        "firstName": "MA. LOREEN",
+        "username": "loreen-rialmm"
+      },
+      {
+        "lastName": "MATENCIO",
+        "firstName": "TRISTAN MATTHEW",
+        "username": "trismatt20"
+      },
+      {
+        "lastName": "MAURICIO",
+        "firstName": "BRANDON AREEJ",
+        "username": "brandon-adm"
+      },
+      {
+        "lastName": "MELITANTE",
+        "firstName": "DANIEL",
+        "username": "le1nad-prog"
+      },
+      {
+        "lastName": "MILORIN",
+        "firstName": "KEN AERON",
+        "username": "karmken"
+      },
+      {
+        "lastName": "MONTEROLA",
+        "firstName": "JAY DENVER",
+        "username": "jayjay5503"
+      },
+      {
+        "lastName": "ORTIZ, JR.",
+        "firstName": "MAXIMO DAVID",
+        "username": "davidortizjr"
+      },
+      {
+        "lastName": "PADUA",
+        "firstName": "CARL STEPHENE",
+        "username": "cspadua"
+      },
+      {
+        "lastName": "PALLA",
+        "firstName": "KIMBERLY JOAN",
+        "username": "kimbpalla"
+      },
+      {
+        "lastName": "RABINO",
+        "firstName": "REJOICE",
+        "username": "rejoicerabino"
+      },
+      {
+        "lastName": "RAMOS",
+        "firstName": "RON GABRIEL",
+        "username": "roowwnnn"
+      },
+      {
+        "lastName": "RAYMUNDO",
+        "firstName": "JUSTINE",
+        "username": "jtraymundo18"
+      },
+      {
+        "lastName": "REANO",
+        "firstName": "JAMIEL BRYAN",
+        "username": "bry4n-coder"
+      },
+      {
+        "lastName": "REGIO",
+        "firstName": "ROLAND",
+        "username": "rzregio"
+      },
+      {
+        "lastName": "REYES",
+        "firstName": "JENNA MILES",
+        "username": "binibiningjenna"
+      },
+      {
+        "lastName": "RIANZARES",
+        "firstName": "JERMAINE MICAH",
+        "username": "mainnely"
+      },
+      {
+        "lastName": "SANTOS",
+        "firstName": "LOUIS GABRIELLE",
+        "username": "we-turkzzz"
+      },
+      {
+        "lastName": "SILVERIO",
+        "firstName": "SHANE RHYDER",
+        "username": "shanerhyder"
+      },
+      {
+        "lastName": "SUAREZ",
+        "firstName": "DENISE GABRIELLE",
+        "username": "denisegabrielle"
+      },
+      {
+        "lastName": "TORRALBA",
+        "firstName": "LIRA ANGELA",
+        "username": "angelssi"
+      },
+      {
+        "lastName": "TORRILLO",
+        "firstName": "CHRISTIAN JAMES",
+        "username": "christianjamss"
+      },
+      {
+        "lastName": "URIARTE",
+        "firstName": "ANYL FEBOE",
+        "username": "uriarte-anyl"
+      },
+      {
+        "lastName": "VERGARA",
+        "firstName": "NEIL JEFERSON",
+        "username": "neilvergara12"
+      },
+      {
+        "lastName": "VILLANUEVA",
+        "firstName": "MARK LOUIE",
+        "username": "marklouie019"
+      }
+    ]
+
+    var container = document.getElementById("container");
+    for (var i = 0; i < githubData.length; i++) {
+      var fullName = githubData[i].lastName + ", " + githubData[i].firstName;
+      var githubLink = "https://github.com/" + githubData[i].username;
+      var siteLink = "https://" + githubData[i].username + ".github.io/ADET/A02";
+      container.innerHTML += `
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card my-3 rounded-5 overflow-hidden">
+            <embed type="text/html" src="` + siteLink + `" width="100%" height="200px">
+            <div class="card-body shadow-lg">
+              <h6 class="card-title">` + fullName + `</h6>
+              <p class="card-text text-body-secondary">` + siteLink + `</p>
+              <a target="_blank" href="` + githubLink + `" class="btn btn-primary">GitHub</a>
+              <a target="_blank" href="` + siteLink + `" class="btn btn-primary">Site</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+  </script>
+</body>
+
+</html>
