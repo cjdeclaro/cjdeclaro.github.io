@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+      .picture-container{
+        width: 200px;
+        height: 200px;
+        background-color: lightgrey;
+        border-radius: 100px;
+      }
+
+      .picture-container img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid py-3" style="background-color: rgb(255, 65, 65);">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="h3" style="color: white">
+              PokéDex
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card text-center p-5 rounded-5 shadow mx-auto" style="max-width: 500px">
+            <div class="picture-container mx-auto">
+              <img src="" id="img">
+            </div>
+            <div class="mt-5 h5" id="name">#001 Pokemon Name</div>
+            <div class="mt-1 mb-3 card rounded-5 p-2" id="type">Pokemon Type</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const getPokemon = async () => {
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/snorlax');
+        const pokemon = await response.json();
+
+        var namecontainer = document.getElementById("name");
+        var typecontainer = document.getElementById("type");
+        var imgcontainer = document.getElementById("img");
+
+        namecontainer.innerHTML = "#" + pokemon.id + " " + pokemon.name.toUpperCase();
+        typecontainer.innerHTML = pokemon.types[0].type.name;
+        imgcontainer.src = pokemon.sprites.other.home.front_default;
+      }
+
+      getPokemon();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

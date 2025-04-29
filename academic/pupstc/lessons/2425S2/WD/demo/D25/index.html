@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    .picture-container {
+      width: 200px;
+      height: 200px;
+      background-color: lightgrey;
+      border-radius: 100px;
+    }
+
+    .picture-container img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid py-3" style="background-color: rgb(255, 65, 65);">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="h3" style="color: white">
+            PokéDex
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card rounded-5 p-3 mx-auto text-center" style="max-width: 500px">
+          <form>
+            <input type="text" class="form-control rounded-5 p-2 mb-3" id="pokemonNameSearch">
+            <input onclick="getPokemon()" type="button" class="btn btn-primary rounded-5 py-2 px-3" value="search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3" id="pokemonMainContainer" style="display: none">
+    <div class="row">
+      <div class="col">
+        <div class="card text-center p-5 rounded-5 shadow mx-auto" style="max-width: 500px">
+          <div class="picture-container mx-auto" id="picture-container">
+            <img src="" id="img">
+          </div>
+          <div class="mt-5 h5" id="name">#001 Pokemon Name</div>
+          <div class="mt-1 mb-3 card rounded-5 p-2" id="type">Pokemon Type</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="myAudio" src="" preload="auto" autoplay></audio>
+
+  <script>
+    var colors = {
+      "normal": "#DCD0C0",
+      "fire": "#FFB3A7",
+      "water": "#A7D3F7",
+      "grass": "#B2E2B2",
+      "electric": "#FFF5A2",
+      "ice": "#C2F0F7",
+      "fighting": "#E3A09A",
+      "poison": "#D5A6E1",
+      "ground": "#E7D3A5",
+      "flying": "#C9D8F0",
+      "psychic": "#F7A8C2",
+      "bug": "#C7E7A4",
+      "rock": "#D7C4A3",
+      "ghost": "#C8B3E6",
+      "dragon": "#B8C5F2",
+      "dark": "#B5A8A2",
+      "steel": "#D1D9E6",
+      "fairy": "#F9CCE2"
+    }
+
+    const getPokemon = async () => {
+      document.getElementById("pokemonMainContainer").style.display = "block";
+      var pokemonNameSearch = document.getElementById("pokemonNameSearch").value;
+      var pictureContainer = document.getElementById("picture-container");
+
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + pokemonNameSearch);
+      const pokemon = await response.json();
+
+      var namecontainer = document.getElementById("name");
+      var typecontainer = document.getElementById("type");
+      var imgcontainer = document.getElementById("img");
+
+      namecontainer.innerHTML = "#" + pokemon.id + " " + pokemon.name.toUpperCase();
+      typecontainer.innerHTML = pokemon.types[0].type.name;
+      imgcontainer.src = pokemon.sprites.other.home.front_default;
+      typecontainer.style.backgroundColor = colors[pokemon.types[0].type.name];
+      pictureContainer.style.backgroundColor = colors[pokemon.types[0].type.name];
+
+      const myAudio = document.getElementById('myAudio');
+      myAudio.src = pokemon.cries.latest;
+      myAudio.play();
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
