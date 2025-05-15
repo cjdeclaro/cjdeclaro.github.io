@@ -19,6 +19,36 @@ switch ($method) {
 
 function handleGet($pdo)
 {
+  //TABLE CHECK
+  $testQuery = "SELECT * FROM categories LIMIT 1";
+  $queryResult = executeQuery($testQuery);
+
+  if(!$queryResult){
+    $createTable = "
+      CREATE TABLE `categories` (
+        `categoryID` int(4) NOT NULL,
+        `name` varchar(30) NOT NULL
+      );
+    ";
+    $assignKey = "
+      ALTER TABLE `categories` ADD PRIMARY KEY (`categoryID`);
+    ";
+    $assignAttributes = "
+      ALTER TABLE `categories` MODIFY `categoryID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+    ";
+    $addDefaultData = "
+      INSERT INTO `categories` (`categoryID`, `name`) VALUES
+      (1, 'Burgers'),
+      (2, 'Pasta'),
+      (3, 'Meal');
+    ";
+
+    executeQuery($createTable);
+    executeQuery($assignKey);
+    executeQuery($assignAttributes);
+    executeQuery($addDefaultData);
+  }
+
   $sql = "SELECT * FROM categories";
   $stmt = $pdo->prepare($sql);
   $stmt->execute();

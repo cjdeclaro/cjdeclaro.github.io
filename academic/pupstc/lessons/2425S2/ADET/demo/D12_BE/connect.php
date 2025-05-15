@@ -1,8 +1,8 @@
 <?php
-$dbhost = "sql108.infinityfree.com";
-$dbuser = "if0_38891291";
-$dbpass = "lYKw21mXOf";
-$db = "if0_38891291_pos";
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$db = "POS";
 
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n" . $conn->error);
 

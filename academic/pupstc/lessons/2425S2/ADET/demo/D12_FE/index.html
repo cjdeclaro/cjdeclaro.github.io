@@ -43,6 +43,9 @@
           <div class="col pb-3">
             <div class="card overflow-scroll p-3 topcontainer">
               <div class="d-flex flex-start flex-row categories" id="categories">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
             </div>
           </div>
@@ -50,6 +53,9 @@
         <div class="row">
           <div class="col">
             <div class="card overflow-scroll p-3 maincontainer">
+              <div class="spinner-grow mx-auto" role="status" id="productloading" style="display: none; color: maroon">
+                <span class="visually-hidden">Loading...</span>
+              </div>
               <div class="d-flex flex-start flex-row flex-wrap" id="maincontainer">
               </div>
             </div>
@@ -74,9 +80,12 @@
     var categories = [];
     var products = [];
 
+    var productloading = document.getElementById("productloading");
+    var maincontainer = document.getElementById("maincontainer");
+
     const getAllCategories = async () => {
       fetch(
-          'http://pupstc.infinityfreeapp.com/categories.php'
+          'http://localhost/personal/cjdeclaro.github.io/academic/pupstc/lessons/2425S2/ADET/demo/D12_BE/categories.php'
           )
         .then(response => response.json())
         .then(data => {
@@ -90,8 +99,11 @@
         categoryID: categoryID
       };
 
+      maincontainer.innerHTML = "";
+      productloading.style.display = "block";
+
       fetch(
-          'http://pupstc.infinityfreeapp.com/products.php', {
+          'http://localhost/personal/cjdeclaro.github.io/academic/pupstc/lessons/2425S2/ADET/demo/D12_BE/products.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -111,6 +123,7 @@
 
     function loadCategories() {
       var categoriesContainer = document.getElementById("categories");
+      categoriesContainer.innerHTML = "";
 
       categories.forEach((category) => {
         categoriesContainer.innerHTML += `
@@ -122,8 +135,8 @@
     }
 
     function loadProducts(categoryID) {
-      var maincontainer = document.getElementById("maincontainer");
       maincontainer.innerHTML = "";
+      productloading.style.display = "none";
 
       products.forEach(product => {
         maincontainer.innerHTML += `
