@@ -10,6 +10,16 @@ body {
   width: 100%;
 }
 
+.card-image {
+  min-height: 200px;
+  height: 200px;
+  background-color: grey;
+}
+
+.card-image img {
+  width: 100%;
+}
+
 .small {
   font-size: smaller;
 }
