@@ -1,0 +1,32 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+.header{
+  height: 80dvh;
+  min-height: 400px;
+}
+
+.header-name {
+  font-size: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+}
+
+.text-content {
+  max-width: 800px;
+}
+
+.tech-card {
+  height: 100%;
+}

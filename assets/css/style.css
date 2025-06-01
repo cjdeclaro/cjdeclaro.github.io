@@ -1,0 +1,35 @@
+body {
+  font-family: "Poppins";
+}
+
+.image {
+  max-width: 130px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.text-secondary {
+  font-family: "Roboto" !important;
+}
+
+.about-card {
+  height: 100%;
+}
+
+.navigation {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.navbutton {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Roboto" !important;
+}
