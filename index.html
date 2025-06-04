@@ -27,22 +27,22 @@
   <div class="bg-dark-subtle shadow p-3 position-fixed bottom-0 d-xl-none z-1 w-100">
     <div class="container">
       <div class="d-flex flex-row justify-content-around">
-        <div class="navbutton btn-about" onclick="loadData('about')">
+        <div class="navbutton btn-about" onclick="loadPage('about')">
           About
         </div>
-        <div class="navbutton btn-cv" onclick="loadData('cv')">
+        <div class="navbutton btn-cv" onclick="loadPage('cv')">
           CV
         </div>
-        <div class="navbutton btn-portfolio" onclick="loadData('portfolio')">
+        <div class="navbutton btn-portfolio" onclick="loadPage('portfolio')">
           Portfolio
         </div>
-        <div class="navbutton btn-awards" onclick="loadData('awards')">
+        <div class="navbutton btn-awards" onclick="loadPage('awards')">
           Awards
         </div>
-        <div class="navbutton btn-talks" onclick="loadData('talks')">
+        <div class="navbutton btn-talks" onclick="loadPage('talks')">
           Talks
         </div>
-        <div class="navbutton btn-art" onclick="loadData('art')">
+        <div class="navbutton btn-art" onclick="loadPage('art')">
           Art
         </div>
       </div>
@@ -109,22 +109,22 @@
             <div
               class="navigation shadow border-start border-bottom p-3 d-none d-xl-block bg-dark-subtle">
               <div class="d-flex flex-row">
-                <div class="mx-3 navbutton btn-about" onclick="loadData('about')">
+                <div class="mx-3 navbutton btn-about" onclick="loadPage('about')">
                   About
                 </div>
-                <div class="mx-3 navbutton btn-cv" onclick="loadData('cv')">
+                <div class="mx-3 navbutton btn-cv" onclick="loadPage('cv')">
                   CV
                 </div>
-                <div class="mx-3 navbutton btn-portfolio" onclick="loadData('portfolio')">
+                <div class="mx-3 navbutton btn-portfolio" onclick="loadPage('portfolio')">
                   Portfolio
                 </div>
-                <div class="mx-3 navbutton btn-awards" onclick="loadData('awards')">
+                <div class="mx-3 navbutton btn-awards" onclick="loadPage('awards')">
                   Awards
                 </div>
-                <div class="mx-3 navbutton btn-talks" onclick="loadData('talks')">
+                <div class="mx-3 navbutton btn-talks" onclick="loadPage('talks')">
                   Talks
                 </div>
-                <div class="mx-3 navbutton btn-art" onclick="loadData('art')">
+                <div class="mx-3 navbutton btn-art" onclick="loadPage('art')">
                   Art
                 </div>
               </div>
@@ -142,9 +142,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
   </script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/populate.js"></script>
+  <script src="assets/js/navigate.js"></script>
   <script>
-    loadData();
+    loadPage();
   </script>
 </body>
 

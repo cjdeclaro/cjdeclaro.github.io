@@ -14,12 +14,13 @@ function activateNavButton(btnname) {
   });
 }
 
-function loadData(content = 'about') {
+function loadPage(content = 'about') {
   const maincontent = document.getElementById('maincontent');
   fetch(`content/${content}.html`)
     .then(response => response.text())
     .then(data => {
       maincontent.innerHTML = data;
+      renderCards(content+'-container', siteData[content]);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     })
     .catch(error => console.error('Error fetching file:', error));
