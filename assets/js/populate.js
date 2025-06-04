@@ -1,8 +1,8 @@
 function renderCards(containerId, data) {
   const container = document.getElementById(containerId);
 
-  if(!container) return;
-  if(!data) return;
+  if (!container) return;
+  if (!data) return;
 
   data.forEach(item => {
     const col = document.createElement("div");
@@ -14,7 +14,7 @@ function renderCards(containerId, data) {
     col.innerHTML = `
         <div class="card about-card rounded-4 overflow-hidden">
           <div class="card-image overflow-hidden position-relative">
-            <img src="${item.image}" class="card-img-top position-absolute top-50 start-50 translate-middle">
+            <img src="${item.image}" class="card-img-top position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="${item.image}">
           </div>
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
@@ -26,5 +26,13 @@ function renderCards(containerId, data) {
       `;
 
     container.appendChild(col);
+  });
+
+  var modalImage = document.getElementById('modalImage');
+  document.querySelectorAll('[data-bs-toggle="modal"]').forEach(img => {
+    img.addEventListener('click', () => {
+      modalImage.src = img.getAttribute('data-bs-img');
+      modalImage.alt = img.alt;
+    });
   });
 }
