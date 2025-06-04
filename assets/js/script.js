@@ -20,6 +20,7 @@ function loadData(content = 'about') {
     .then(response => response.text())
     .then(data => {
       maincontent.innerHTML = data;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     })
     .catch(error => console.error('Error fetching file:', error));
 
