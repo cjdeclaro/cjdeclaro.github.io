@@ -24,7 +24,8 @@ body {
   font-size: smaller;
 }
 
-.text-secondary, .text-body-secondary {
+.text-secondary,
+.text-body-secondary {
   font-family: "Roboto" !important;
 }
 
@@ -42,4 +43,8 @@ body {
 
 p {
   font-family: "Roboto" !important;
+}
+
+[data-bs-theme=light] .bg-dark-subtle {
+  background-color: white !important;
 }

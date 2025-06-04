@@ -20,8 +20,11 @@ function loadPage(content = 'about') {
     .then(response => response.text())
     .then(data => {
       maincontent.innerHTML = data;
-      renderCards(content+'-container', siteData[content]);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      renderCards(content + '-container', siteData[content]);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     })
     .catch(error => console.error('Error fetching file:', error));
 
