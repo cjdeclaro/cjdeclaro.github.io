@@ -16,6 +16,10 @@ function activateNavButton(btnname) {
 
 function loadPage(content = 'about') {
   const maincontent = document.getElementById('maincontent');
+  const loadingElement = document.getElementById('loading');
+
+  loadingElement.classList.remove("d-none");
+
   fetch(`content/${content}.html`)
     .then(response => response.text())
     .then(data => {
@@ -25,6 +29,7 @@ function loadPage(content = 'about') {
         top: 0,
         behavior: 'smooth'
       });
+      loadingElement.classList.add("d-none");
     })
     .catch(error => console.error('Error fetching file:', error));
 
