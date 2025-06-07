@@ -18,6 +18,7 @@ function renderCards(containerId, data) {
           </div>
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
+            ${item.subtitle ? `<h6 class="card-subtitle mb-2 text-body-secondary">${item.subtitle}</h6>` : ''}
             <p class="card-text">${item.description}</p>
             ${item.viewLink ? `<a target="_blank" href="${item.viewLink}" class="btn btn-secondary btn-sm"><i class="mx-2 fa fa-${buttonIcon}"></i>${buttonName}</a>` : ''}
             ${item.docLink ? `<a target="_blank" href="${item.docLink}" class="btn btn-secondary btn-sm"><i class="mx-2 fa fa-github"></i>Documentation</a>` : ''}
