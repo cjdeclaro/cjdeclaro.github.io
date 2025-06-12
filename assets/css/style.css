@@ -2,6 +2,13 @@ body {
   font-family: "Poppins";
 }
 
+.glass, .card {
+  backdrop-filter: blur(15px) brightness(100%) !important;
+  box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.2) !important;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .image {
   max-width: 130px;
 }
