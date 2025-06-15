@@ -213,6 +213,11 @@ const siteData = {
     }
   ],
   "talks": [{
+      "title": "AI Augmentation: How AI is transforming the way we work",
+      "subtitle": "Mapúa Malayan Colleges Laguna, Laguna, Jun 2025",
+      "description": "Talked about how AI transforms careers. Boiling down to the grassroots of AI and how it can affect our behavior in the following fields: Personal, Societal, Educational, and in the Professional field. I discussed how it can augment, replace, and improve Filipino lives.",
+      "image": "assets/img/talks/mmcl.JPG"
+    },{
       "title": "AI: The New Power Tool of Every IT Professional",
       "subtitle": "The Computer Society, PUP Gymnasium, May 2025",
       "description": "The event's academic focus was highlighted by the keynote presentation titled \"AI: The New Power Tool of Every IT Professional,\" delivered by Mr. Christopher Jay De Claro, Co-Adviser of the Computer Society. His talk explored the growing role of artificial intelligence in IT environments, emphasizing the collaborative potential between human professionals and AI systems, as well as the emerging opportunities in the field. A live demonstration of a conversation with Google's Gemini showcased the rapid evolution of AI technologies.",
