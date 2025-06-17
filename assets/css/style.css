@@ -2,15 +2,6 @@ body {
   font-family: "Poppins";
 }
 
-.glass,
-.card {
-  backdrop-filter: blur(15px) brightness(100%) !important;
-  box-shadow: inset 4px 4px 10px 4px rgba(255, 255, 255, 0.2) !important;
-  text-shadow: 0px 0px 5px rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-}
-
 .image {
   max-width: 130px;
 }
@@ -35,7 +26,8 @@ body {
 }
 
 .text-secondary,
-.text-body-secondary {
+.text-body-secondary,
+p {
   font-family: "Roboto" !important;
 }
 
@@ -49,10 +41,6 @@ body {
 
 .navbutton {
   cursor: pointer;
-}
-
-p {
-  font-family: "Roboto" !important;
 }
 
 [data-bs-theme=light] .bg-dark-subtle {

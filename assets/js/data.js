@@ -283,13 +283,13 @@ const siteData = {
       "image": "assets/img/talks/ye2018.jpg"
     },
     {
-      "title": "App Presentor",
+      "title": "App Presenter",
       "subtitle": "Department of Science and Technology, DOST Taguig City, Dec 2017",
       "description": "Presented SolAR System - an Augmented Reality Mobile Learning App that integrates AR for a more immersive and innovative way of classical education.",
       "image": "assets/img/talks/nast.jpg"
     },
     {
-      "title": "App Presentor",
+      "title": "App Presenter",
       "subtitle": "College of Computer and Information Sciences, PUP Auditorium, Mar 2017",
       "description": "Presented HealthMax - Your Personal Healthcare companion, a health monitoring mobile application with Artificial Intelligence",
       "image": "assets/img/talks/healthmax.jpg"
