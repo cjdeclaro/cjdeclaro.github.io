@@ -42,7 +42,3 @@ p {
 .navbutton {
   cursor: pointer;
 }
-
-[data-bs-theme=light] .bg-dark-subtle {
-  background-color: white !important;
-}
