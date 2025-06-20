@@ -12,7 +12,7 @@ function renderCards(containerId, data) {
     let buttonName = item.buttonName ? item.buttonName : "View";
 
     col.innerHTML = `
-        <div class="card about-card rounded-4 overflow-hidden">
+        <div class="shadow card about-card rounded-4 overflow-hidden">
           <div class="card-image overflow-hidden position-relative">
             <img src="${item.image}" class="card-img-top position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="${item.image}">
           </div>

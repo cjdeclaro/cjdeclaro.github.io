@@ -54,8 +54,8 @@
 }
 
 .shape:nth-child(5) {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 280px;
   background: #fc466b;
   left: 50%;
   animation-duration: 25s;

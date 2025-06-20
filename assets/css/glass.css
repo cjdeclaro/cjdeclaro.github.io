@@ -1,4 +1,9 @@
 .glass, .card {
   backdrop-filter: blur(60px) brightness(100%) !important;
   background-color: rgba(255, 255, 255, 0.4) !important;
+  border: unset !important;
+}
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.6) !important;
 }
