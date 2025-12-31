@@ -213,6 +213,12 @@ const siteData = {
     }
   ],
   "talks": [{
+      "title": "Rebooting Your Development Career: Thriving with AI and Emerging Technology",
+      "subtitle": "Sta Rosa Auditorium, Sta Rosa, Laguna, Dec 2025",
+      "description": "Talked about how AI transforms careers. Boiling down to the grassroots of AI and how it can affect our behavior in the following fields: Personal, Societal, Educational, and in the Professional field. I discussed how it can augment, replace, and improve Filipino lives.",
+      "image": "assets/img/talks/starosa.jpg"
+    },
+    {
       "title": "AI Augmentation: How AI is transforming the way we work",
       "subtitle": "Mapúa Malayan Colleges Laguna, Laguna, Jun 2025",
       "description": "Talked about how AI transforms careers. Boiling down to the grassroots of AI and how it can affect our behavior in the following fields: Personal, Societal, Educational, and in the Professional field. I discussed how it can augment, replace, and improve Filipino lives.",
