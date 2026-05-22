@@ -7,6 +7,11 @@ const siteData = {
       "docLink": "https://github.com/cjdeclaro/mapping-the-ph"
     },
     {
+      "title": "Barangay EGov System",
+      "description": "A system tailored for a Barangay in Tondo, Manila. A community outreach program of the BSIT Faculty of PUP Sto Tomas.",
+      "image": "assets/img/portfolio/tondo.JPG"
+    },
+    {
       "title": "Emotionally Intelligent Blobs",
       "description": "A small project as a demonstrative experiment on AI personality development. Create with vanilla JS",
       "image": "assets/img/portfolio/the-playground.png",
@@ -104,6 +109,12 @@ const siteData = {
     }
   ],
   "awards": [{
+      "title": "Outstanding Faculty 2024-2025",
+      "subtitle": "PUP Sto Tomas, PUP Gymnasium, 2026",
+      "description": "Was awarded as one of the Polytechnic University of the Philippines' Outstanding Faculty of the school year 2024-2025.",
+      "image": "assets/img/awards/outstanding2025.png"
+    },
+    {
       "title": "Outstanding Faculty 2023-2024",
       "subtitle": "PUP Sto Tomas, PUP Gymnasium, 2025",
       "description": "Was awarded as one of the Polytechnic University of the Philippines' Outstanding Faculty of the school year 2023-2024.",
@@ -112,7 +123,7 @@ const siteData = {
     {
       "title": "Outstanding Faculty 2022-2023",
       "subtitle": "PUP Sto Tomas, PUP Gymnasium, 2024",
-      "description": "Was awarded as one of the Polytechnic University of the Philippines' Outstanding Faculty of the school year 2023-2024.",
+      "description": "Was awarded as one of the Polytechnic University of the Philippines' Outstanding Faculty of the school year 2022-2023.",
       "image": "assets/img/awards/outstanding2023.jpeg"
     },
     {
@@ -213,8 +224,14 @@ const siteData = {
     }
   ],
   "talks": [{
+      "title": "Code Green: The Future of AI and the Fate of the Environment",
+      "subtitle": "Cavite State University, Online, May 2026",
+      "description": "An academic talk to the students taking up BS Environmental Science. The talk focused on AI and its effects on the Environment. Takling dilemmas and issues revolving around Artificial Intelligence and its ethical use, sustainability, data-driven policy making, and academic responsibilities of AI implementors.",
+      "image": "assets/img/talks/cavsu.jpg"
+    },
+    {
       "title": "Rebooting Your Development Career: Thriving with AI and Emerging Technology",
-      "subtitle": "Sta Rosa Auditorium, Sta Rosa, Laguna, Dec 2025",
+      "subtitle": "Sta Rosa Auditorium, Laguna, Dec 2025",
       "description": "Talked about how AI transforms careers. Boiling down to the grassroots of AI and how it can affect our behavior in the following fields: Personal, Societal, Educational, and in the Professional field. I discussed how it can augment, replace, and improve Filipino lives.",
       "image": "assets/img/talks/starosa.jpg"
     },
